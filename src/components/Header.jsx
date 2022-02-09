@@ -25,12 +25,14 @@ export default function Header() {
       <div>
         <input
           type="image"
-          value="PT-BR"
+          value="pt-BR"
           onClick={(e) => setLanguage(e.target.value)}
           src={brazil}
           alt={language === 'pt-BR'
             ? languageObject.altFlagBrazil.pt
             : languageObject.altFlagBrazil.en}
+          width="40px"
+          height="40px"
         />
         <input
           type="image"
@@ -40,6 +42,8 @@ export default function Header() {
           alt={language === 'pt-BR'
             ? languageObject.altFlagEUA.pt
             : languageObject.altFlagEUA.en}
+          width="40px"
+          height="40px"
         />
       </div>
     </header>
