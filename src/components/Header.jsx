@@ -17,10 +17,10 @@ export default function Header() {
   return (
     <header>
       <nav>
-        <h3>{ language === 'PT-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</h3>
-        <h3>{ language === 'PT-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</h3>
-        <h3>{ language === 'PT-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</h3>
-        <h3>{ language === 'PT-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</h3>
+        <h3>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</h3>
+        <h3>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</h3>
+        <h3>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</h3>
+        <h3>{ language === 'pt-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</h3>
       </nav>
       <div>
         <input
@@ -28,16 +28,16 @@ export default function Header() {
           value="PT-BR"
           onClick={(e) => setLanguage(e.target.value)}
           src={brazil}
-          alt={language === 'PT-BR'
+          alt={language === 'pt-BR'
             ? languageObject.altFlagBrazil.pt
             : languageObject.altFlagBrazil.en}
         />
         <input
           type="image"
-          value="EN-US"
+          value="en-US"
           onClick={(e) => setLanguage(e.target.value)}
           src={EUA}
-          alt={language === 'PT-BR'
+          alt={language === 'pt-BR'
             ? languageObject.altFlagEUA.pt
             : languageObject.altFlagEUA.en}
         />
