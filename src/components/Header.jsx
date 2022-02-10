@@ -28,8 +28,21 @@ export default function Header() {
   }
 
   return (
-    <header>
-      <nav>
+    <header style={theme ? {
+      display: 'flex',
+      flexWrap: 'nowrap',
+      flexDirection: 'row',
+      backgroundColor: 'black',
+      color: 'white',
+    } : {
+      display: 'flex',
+      flexWrap: 'nowrap',
+      flexDirection: 'row',
+      backgroundColor: 'white',
+      color: 'black',
+    }}
+    >
+      <nav style={{ display: 'flex' }}>
         <h3>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</h3>
         <h3>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</h3>
         <h3>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</h3>
@@ -70,9 +83,8 @@ export default function Header() {
           }}
         >
           { theme
-            ? <Moon className="theme-dark" />
-            : <Sun className="theme-clean" /> }
-
+            ? <Sun style={{ color: 'white' }} className="theme-clean" />
+            : <Moon className="theme-dark" />}
         </button>
       </div>
     </header>
