@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
+import { IoMdMoon as Moon } from 'react-icons/io';
+import { FiSun as Sun } from 'react-icons/fi';
 import brazil from '../images/brazil-circle.svg';
 import EUA from '../images/EUA-circle.svg';
 
 export default function Header() {
-  const [language, setLanguage] = useState(navigator.language);
-
   const languageObject = {
     titleNav1: { pt: 'Sobre', en: 'About' },
     titleNav2: { pt: 'Projetos', en: 'Projects' },
@@ -13,6 +13,19 @@ export default function Header() {
     altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
     altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
   };
+
+  const themeUser = window.matchMedia('(prefers-color-scheme: dark)');
+
+  const [language, setLanguage] = useState(navigator.language);
+  const [theme, setTheme] = useState(themeUser.matches);
+
+  function alterTheme() {
+    if (theme) {
+      setTheme(false);
+    } if (!theme) {
+      setTheme(true);
+    }
+  }
 
   return (
     <header>
@@ -45,6 +58,22 @@ export default function Header() {
           width="40px"
           height="40px"
         />
+      </div>
+      <div>
+        <button
+          type="button"
+          onClick={() => alterTheme()}
+          className="button-visible"
+          style={{
+            backgroundColor: 'transparent',
+            border: 'none',
+          }}
+        >
+          { theme
+            ? <Moon className="theme-dark" />
+            : <Sun className="theme-clean" /> }
+
+        </button>
       </div>
     </header>
   );
