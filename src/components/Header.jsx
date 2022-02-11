@@ -39,7 +39,7 @@ export default function Header() {
       flexDirection: 'row',
       backgroundColor: 'black',
       color: 'white',
-      fontSize: '10px',
+      fontSize: '18px',
     } : {
       display: 'flex',
       justifyContent: 'space-around',
@@ -48,7 +48,7 @@ export default function Header() {
       flexDirection: 'row',
       backgroundColor: 'white',
       color: 'black',
-      fontSize: '10px',
+      fontSize: '18px',
     }}
     >
       <nav style={{ display: 'flex', width: '100%', justifyContent: 'space-evenly' }}>
@@ -75,8 +75,8 @@ export default function Header() {
           }}
         >
           { theme
-            ? <Sun style={{ color: 'white' }} className="theme-clean" />
-            : <Moon className="theme-dark" />}
+            ? <Sun style={{ color: 'white', fontSize: '20px' }} className="theme-clean" />
+            : <Moon style={{ fontSize: '20px' }} className="theme-dark" />}
         </button>
       </div>
       <div style={{
@@ -93,9 +93,9 @@ export default function Header() {
           alt={language === 'pt-BR'
             ? languageObject.altFlagBrazil.pt
             : languageObject.altFlagBrazil.en}
-          width="20px"
-          height="20px"
-          style={{ marginRight: '5px' }}
+          width="25px"
+          height="25px"
+          style={{ marginRight: '5%' }}
         />
         <input
           type="image"
@@ -105,8 +105,8 @@ export default function Header() {
           alt={language === 'pt-BR'
             ? languageObject.altFlagEUA.pt
             : languageObject.altFlagEUA.en}
-          width="20px"
-          height="20px"
+          width="25px"
+          height="25px"
         />
       </div>
     </header>
