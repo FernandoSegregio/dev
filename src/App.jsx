@@ -1,11 +1,14 @@
 import React from 'react';
 import Header from './components/Header';
+import SectionMain from './components/SectionMain';
+import PortfolioProvider from './context/PortfolioProvider';
 
 function App() {
   return (
-    <div className="container-portfolio">
+    <PortfolioProvider>
       <Header />
-    </div>
+      <SectionMain />
+    </PortfolioProvider>
   );
 }
 
