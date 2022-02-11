@@ -1,10 +1,18 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
 import { IoMdMoon as Moon, IoIosArrowBack as ArrowBack, IoIosArrowForward as ArrowForward } from 'react-icons/io';
 import { FiSun as Sun } from 'react-icons/fi';
 import brazil from '../images/brazil-circle.svg';
 import EUA from '../images/EUA-circle.svg';
+import PortfolioContext from '../context/PortfolioContext';
 
 export default function Header() {
+  const {
+    theme,
+    setTheme,
+    language,
+    setLanguage,
+  } = useContext(PortfolioContext);
+
   const languageObject = {
     titleNav1: { pt: 'Sobre', en: 'About' },
     titleNav2: { pt: 'Projetos', en: 'Projects' },
@@ -13,11 +21,6 @@ export default function Header() {
     altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
     altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
   };
-
-  const themeUser = window.matchMedia('(prefers-color-scheme: dark)');
-
-  const [language, setLanguage] = useState(navigator.language);
-  const [theme, setTheme] = useState(themeUser.matches);
 
   function alterTheme() {
     if (theme) {
