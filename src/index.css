@@ -14,3 +14,13 @@ code {
   font-family: inter, source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.name-title{
+    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+  
+    /* Adicionado: */
+    -webkit-text-fill-color: transparent;
+  }
