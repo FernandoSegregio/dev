@@ -9,8 +9,9 @@ export const HeaderStyle = styled.header`
   font-size: 18px;
   padding-top: 3%;
 
-    h3 {
+    li {
         font-weight: 500;
+        list-style: none;
     }
 
     nav {
@@ -18,6 +19,25 @@ export const HeaderStyle = styled.header`
         width: 100%;
         justify-content: space-evenly;
     }
+
+    button {
+        background-color: transparent;
+        border: none; 
+        color: var(--white);
+        font-size: 20px;
+    }
+
+    .theme-dark {
+        color: var(--black);
+    }
 `;
 
-export const NavStyle = styled.nav``;
+export const FlagStyle = styled.div`
+        display: flex;
+        width: 20%;
+        justify-content: center;
+
+        input {
+            margin-Right: 5%;
+        }
+`;

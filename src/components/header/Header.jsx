@@ -4,7 +4,7 @@ import { FiSun as Sun } from 'react-icons/fi';
 import brazil from '../../images/brazil-circle.svg';
 import EUA from '../../images/EUA-circle.svg';
 import PortfolioContext from '../../context/PortfolioContext';
-import { HeaderStyle } from './style';
+import { HeaderStyle, FlagStyle } from './style';
 
 const titleHeader = '<NandoDev/>';
 
@@ -44,27 +44,16 @@ export default function Header() {
         <li>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</li>
         <li>{ language === 'pt-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</li>
       </nav>
-      <div>
-        <button
-          type="button"
-          onClick={() => alterTheme()}
-          className="button-visible"
-          style={{
-            backgroundColor: 'transparent',
-            border: 'none',
-          }}
-        >
-          { theme
-            ? <Sun style={{ color: 'white', fontSize: '20px' }} className="theme-clean" />
-            : <Moon style={{ fontSize: '20px' }} className="theme-dark" />}
-        </button>
-      </div>
-      <div style={{
-        display: 'flex',
-        width: '20%',
-        justifyContent: 'center',
-      }}
+      <button
+        type="button"
+        onClick={() => alterTheme()}
+        className="button-visible"
       >
+        { theme
+          ? <Sun />
+          : <Moon className="theme-dark" />}
+      </button>
+      <FlagStyle>
         <input
           type="image"
           value="pt-BR"
@@ -75,7 +64,6 @@ export default function Header() {
             : languageObject.altFlagBrazil.en}
           width="25px"
           height="25px"
-          style={{ marginRight: '5%' }}
         />
         <input
           type="image"
@@ -88,7 +76,7 @@ export default function Header() {
           width="25px"
           height="25px"
         />
-      </div>
+      </FlagStyle>
     </HeaderStyle>
   );
 }
