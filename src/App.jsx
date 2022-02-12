@@ -2,12 +2,12 @@ import React from 'react';
 import Header from './components/header/Header';
 import SectionMain from './components/section/SectionMain';
 import PortfolioProvider from './context/PortfolioProvider';
-import GlobalStyles from './style/GlobalStyles';
+import GlobalStyle from './style/GlobalStyle';
 
 function App() {
   return (
     <PortfolioProvider>
-      <GlobalStyles />
+      <GlobalStyle />
       <Header />
       <SectionMain />
     </PortfolioProvider>
