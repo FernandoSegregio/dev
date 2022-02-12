@@ -1,9 +1,10 @@
 import React, { useContext } from 'react';
 import { IoMdMoon as Moon, IoIosArrowBack as ArrowBack, IoIosArrowForward as ArrowForward } from 'react-icons/io';
 import { FiSun as Sun } from 'react-icons/fi';
-import brazil from '../images/brazil-circle.svg';
-import EUA from '../images/EUA-circle.svg';
-import PortfolioContext from '../context/PortfolioContext';
+import brazil from '../../images/brazil-circle.svg';
+import EUA from '../../images/EUA-circle.svg';
+import PortfolioContext from '../../context/PortfolioContext';
+import { HeaderStyle } from './style';
 
 export default function Header() {
   const {
@@ -31,29 +32,8 @@ export default function Header() {
   }
 
   return (
-    <header style={theme ? {
-      display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      flexWrap: 'nowrap',
-      flexDirection: 'row',
-      backgroundColor: 'black',
-      color: 'white',
-      fontSize: '18px',
-      paddingTop: '3%',
-    } : {
-      display: 'flex',
-      justifyContent: 'space-around',
-      alignItems: 'center',
-      flexWrap: 'nowrap',
-      flexDirection: 'row',
-      backgroundColor: 'white',
-      color: 'black',
-      fontSize: '18px',
-      paddingTop: '3%',
-    }}
-    >
-      <nav style={{ display: 'flex', width: '100%', justifyContent: 'space-evenly' }}>
+    <HeaderStyle>
+      <nav>
         <div>
           <h3 style={{ display: 'flex', alignItems: 'flex-end' }}>
             <ArrowBack />
@@ -111,6 +91,6 @@ export default function Header() {
           height="25px"
         />
       </div>
-    </header>
+    </HeaderStyle>
   );
 }

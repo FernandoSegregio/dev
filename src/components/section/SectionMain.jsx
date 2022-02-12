@@ -1,6 +1,6 @@
 import React, { useContext, useEffect } from 'react';
-import PortfolioContext from '../context/PortfolioContext';
-import photo from '../images/photo.png';
+import PortfolioContext from '../../context/PortfolioContext';
+import photo from '../../images/photo.png';
 
 export default function SectionMain() {
   const {
