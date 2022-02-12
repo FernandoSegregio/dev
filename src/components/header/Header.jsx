@@ -1,10 +1,12 @@
 import React, { useContext } from 'react';
-import { IoMdMoon as Moon, IoIosArrowBack as ArrowBack, IoIosArrowForward as ArrowForward } from 'react-icons/io';
+import { IoMdMoon as Moon } from 'react-icons/io';
 import { FiSun as Sun } from 'react-icons/fi';
 import brazil from '../../images/brazil-circle.svg';
 import EUA from '../../images/EUA-circle.svg';
 import PortfolioContext from '../../context/PortfolioContext';
 import { HeaderStyle } from './style';
+
+const titleHeader = '<NandoDev/>';
 
 export default function Header() {
   const {
@@ -34,10 +36,8 @@ export default function Header() {
   return (
     <HeaderStyle>
       <nav>
-        <li style={{ display: 'flex', alignItems: 'flex-end' }}>
-          <ArrowBack />
-          NandoDev/
-          <ArrowForward />
+        <li>
+          { titleHeader }
         </li>
         <li>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</li>
         <li>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</li>
