@@ -1,6 +1,12 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap');
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -15,12 +21,55 @@ code {
     monospace;
 }
 
-.name-title{
-    background-image: linear-gradient(to bottom, rebeccapurple, steelblue, turquoise);
+.name-title1{
+  animation: changeTitleColor1 8s infinite;
+}
+
+.name-title2{
+  animation: changeTitleColor2 8s infinite;
+}
+
+
+@keyframes changeTitleColor1 {
+  0% {
+    background-image: linear-gradient(to right, #007CF0, #00DFD8);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    color: antiquewhite;
+  }
+
+  80% {
+    color: white;
+  }
+
+  100% {
+    color: white;
+  }
+  
+}
+
+@keyframes changeTitleColor2 {
+  0% {
+    color: white;
+  }
+  20% {
+    color: antiquewhite;
+  }
+
+  
+
+  100% {
+    background-image: linear-gradient(to right, #7928CA, #FF0080);
     color: black;
     background-clip: text;
     -webkit-background-clip: text;
   
-    /* Adicionado: */
     -webkit-text-fill-color: transparent;
   }
+  
+}
