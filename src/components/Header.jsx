@@ -40,6 +40,7 @@ export default function Header() {
       backgroundColor: 'black',
       color: 'white',
       fontSize: '18px',
+      paddingTop: '3%',
     } : {
       display: 'flex',
       justifyContent: 'space-around',
@@ -49,6 +50,7 @@ export default function Header() {
       backgroundColor: 'white',
       color: 'black',
       fontSize: '18px',
+      paddingTop: '3%',
     }}
     >
       <nav style={{ display: 'flex', width: '100%', justifyContent: 'space-evenly' }}>
