@@ -34,17 +34,15 @@ export default function Header() {
   return (
     <HeaderStyle>
       <nav>
-        <div>
-          <h3 style={{ display: 'flex', alignItems: 'flex-end' }}>
-            <ArrowBack />
-            NandoDev/
-            <ArrowForward />
-          </h3>
-        </div>
-        <h3>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</h3>
-        <h3>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</h3>
-        <h3>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</h3>
-        <h3>{ language === 'pt-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</h3>
+        <li style={{ display: 'flex', alignItems: 'flex-end' }}>
+          <ArrowBack />
+          NandoDev/
+          <ArrowForward />
+        </li>
+        <li>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</li>
+        <li>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</li>
+        <li>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</li>
+        <li>{ language === 'pt-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</li>
       </nav>
       <div>
         <button
