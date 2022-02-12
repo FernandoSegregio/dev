@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from 'react';
 import PortfolioContext from '../context/PortfolioContext';
+import photo from '../images/photo.png';
 
 export default function SectionMain() {
   const {
@@ -26,15 +27,49 @@ export default function SectionMain() {
   };
 
   return (
-    <section style={theme ? { backgroundColor: 'black', color: 'white' } : { backgroundColor: 'white', color: 'black' }}>
-      <div style={{ display: 'flex', flexDirection: 'column', paddingLeft: '20%' }}>
-        <h3 style={{ fontSize: '40px', marginBottom: '2%' }}>{ language === 'pt-BR' ? languageObject.greetingTitle.pt : languageObject.greetingTitle.en }</h3>
-        <h3 style={{ fontSize: '115px', margin: '0' }}>{ languageObject.firstNameTitle.pt }</h3>
-        <h3 style={{ fontSize: '115px', margin: '0' }}>{ languageObject.lastNameTitle.pt }</h3>
-        <h3 style={{ fontSize: '30px' }}>{ language === 'pt-BR' ? languageObject.occupationTitle.pt : languageObject.occupationTitle.en }</h3>
+    <section style={theme ? {
+      backgroundColor: 'black',
+      color: 'white',
+      display: 'flex',
+      height: '100vh',
+      alignItems: 'center',
+      justifyContent: 'center',
+      columnGap: '30px',
+    } : {
+      backgroundColor: 'white',
+      color: 'black',
+      display: 'flex',
+      height: '100vh',
+      alignItems: 'center',
+      justifyContent: 'center',
+    }}
+    >
+      <div style={{ display: 'flex', flexDirection: 'column', padding: '0 20px' }}>
+        <h3 style={{ fontSize: '40px' }}>{ language === 'pt-BR' ? languageObject.greetingTitle.pt : languageObject.greetingTitle.en }</h3>
+        <h3
+          className="name-title1"
+          style={
+          {
+            fontSize: '130px', fontWeight: '800', marginBottom: '-50px', width: '550px', letterSpacing: '-8px',
+          }
+}
+        >
+          { languageObject.firstNameTitle.pt }
+
+        </h3>
+        <h3
+          className="name-title2"
+          style={{
+            fontSize: '130px', fontWeight: '800', letterSpacing: '-8px',
+          }}
+        >
+          { languageObject.lastNameTitle.pt }
+
+        </h3>
+        <h3 style={{ fontSize: '30px', marginTop: '3%' }}>{ language === 'pt-BR' ? languageObject.occupationTitle.pt : languageObject.occupationTitle.en }</h3>
       </div>
       <div>
-        <img src="" alt="" />
+        <img src={photo} alt="" style={{ width: '265px', borderRadius: '90px' }} />
       </div>
     </section>
   );
