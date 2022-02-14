@@ -21,8 +21,8 @@ export default function SectionMain() {
     firstNameTitle: { pt: 'Fernando' },
     lastNameTitle: { pt: 'Segregio' },
     occupationTitle: {
-      pt: 'Desenvolvedor Front-end',
-      en: 'Front-end Developer',
+      pt: 'Desenvolvedor Web Front-end',
+      en: 'Front-end Web Developer',
     },
   };
 
@@ -34,7 +34,7 @@ export default function SectionMain() {
       height: '100vh',
       alignItems: 'center',
       justifyContent: 'center',
-      columnGap: '30px',
+      columnGap: '20px',
     } : {
       backgroundColor: 'white',
       color: 'black',
@@ -50,7 +50,7 @@ export default function SectionMain() {
           className="name-title1"
           style={
           {
-            fontSize: '130px', fontWeight: '800', marginBottom: '-50px', width: '550px', letterSpacing: '-8px',
+            fontSize: '130px', fontWeight: '800', marginBottom: '-50px', width: '580px', letterSpacing: '-5px',
           }
 }
         >
@@ -60,7 +60,7 @@ export default function SectionMain() {
         <h3
           className="name-title2"
           style={{
-            fontSize: '130px', fontWeight: '800', letterSpacing: '-8px',
+            fontSize: '130px', fontWeight: '800', letterSpacing: '-5px',
           }}
         >
           { languageObject.lastNameTitle.pt }
