@@ -4,8 +4,8 @@ export const HeaderStyle = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: var(--black);
-  color: var(--white);
+  background-color: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.text};
   font-size: 18px;
   padding-top: 3%;
 
@@ -23,12 +23,8 @@ export const HeaderStyle = styled.header`
     button {
         background-color: transparent;
         border: none; 
-        color: var(--white);
+        color: ${(props) => props.theme.text};
         font-size: 20px;
-    }
-
-    .theme-dark {
-        color: var(--black);
     }
 `;
 

@@ -3,11 +3,12 @@ import PropTypes from 'prop-types';
 import PortfolioContext from './PortfolioContext';
 
 export default function PortfolioProvider({ children }) {
-  const themeUser = window.matchMedia('(prefers-color-scheme: dark)');
   const languageUser = navigator.language;
+  const themeUser = window.matchMedia('(prefers-color-scheme: dark)');
+  const themeUserCollor = themeUser.matches ? 'dark' : 'light';
 
+  const [theme, setTheme] = useState(themeUserCollor);
   const [language, setLanguage] = useState(languageUser);
-  const [theme, setTheme] = useState(themeUser.matches);
 
   const context = { language, setLanguage, theme, setTheme };
 
