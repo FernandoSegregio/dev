@@ -5,6 +5,7 @@ import brazil from '../../images/brazil-circle.svg';
 import EUA from '../../images/EUA-circle.svg';
 import PortfolioContext from '../../context/PortfolioContext';
 import { HeaderStyle, FlagStyle } from './style';
+import languageData from '../../support/languageData';
 
 const titleHeader = '<NandoDev/>';
 
@@ -15,15 +16,6 @@ export default function Header() {
     language,
     setLanguage,
   } = useContext(PortfolioContext);
-
-  const languageObject = {
-    titleNav1: { pt: 'Sobre', en: 'About' },
-    titleNav2: { pt: 'Projetos', en: 'Projects' },
-    titleNav3: { pt: 'Habilidades', en: 'Skills' },
-    titleNav4: { pt: 'Contato', en: 'Contact' },
-    altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
-    altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
-  };
 
   function alterTheme() {
     if (theme) {
@@ -39,10 +31,10 @@ export default function Header() {
         <li>
           { titleHeader }
         </li>
-        <li>{ language === 'pt-BR' ? languageObject.titleNav1.pt : languageObject.titleNav1.en }</li>
-        <li>{ language === 'pt-BR' ? languageObject.titleNav2.pt : languageObject.titleNav2.en }</li>
-        <li>{ language === 'pt-BR' ? languageObject.titleNav3.pt : languageObject.titleNav3.en }</li>
-        <li>{ language === 'pt-BR' ? languageObject.titleNav4.pt : languageObject.titleNav4.en }</li>
+        <li>{ language === 'pt-BR' ? languageData.titleNav1.pt : languageData.titleNav1.en }</li>
+        <li>{ language === 'pt-BR' ? languageData.titleNav2.pt : languageData.titleNav2.en }</li>
+        <li>{ language === 'pt-BR' ? languageData.titleNav3.pt : languageData.titleNav3.en }</li>
+        <li>{ language === 'pt-BR' ? languageData.titleNav4.pt : languageData.titleNav4.en }</li>
       </nav>
       <button
         type="button"
@@ -60,8 +52,8 @@ export default function Header() {
           onClick={(e) => setLanguage(e.target.value)}
           src={brazil}
           alt={language === 'pt-BR'
-            ? languageObject.altFlagBrazil.pt
-            : languageObject.altFlagBrazil.en}
+            ? languageData.altFlagBrazil.pt
+            : languageData.altFlagBrazil.en}
           width="25px"
           height="25px"
         />
@@ -71,8 +63,8 @@ export default function Header() {
           onClick={(e) => setLanguage(e.target.value)}
           src={EUA}
           alt={language === 'pt-BR'
-            ? languageObject.altFlagEUA.pt
-            : languageObject.altFlagEUA.en}
+            ? languageData.altFlagEUA.pt
+            : languageData.altFlagEUA.en}
           width="25px"
           height="25px"
         />
