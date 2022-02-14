@@ -16,7 +16,7 @@ export const HeaderStyle = styled.header`
 
     nav {
         display: flex;
-        width: 100%;
+        width: 70%;
         justify-content: space-evenly;
     }
 
@@ -25,6 +25,7 @@ export const HeaderStyle = styled.header`
         border: none; 
         color: ${(props) => props.theme.text};
         font-size: 20px;
+        width: 10%;
     }
 `;
 
@@ -32,8 +33,5 @@ export const FlagStyle = styled.div`
         display: flex;
         width: 20%;
         justify-content: center;
-
-        input {
-            margin-Right: 5%;
-        }
+        column-gap: 5%;
 `;
