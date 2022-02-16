@@ -9,7 +9,7 @@ import { HeaderStyle, FlagStyle } from './style';
 import languageData from '../../support/languageData';
 import { dark, light } from '../../style/theme/theme';
 
-const titleHeader = '<NandoDev/>';
+const titleHeader = '< NandoDev />';
 
 export default function Header() {
   const {
@@ -24,7 +24,9 @@ export default function Header() {
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <HeaderStyle>
         <nav>
-          <li>{titleHeader}</li>
+          <li className="logo">
+            {titleHeader}
+          </li>
           <li>
             {language === 'pt-BR'
               ? languageData.titleNav1.pt
