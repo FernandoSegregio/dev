@@ -17,6 +17,7 @@ export const HeaderStyle = styled.header`
 
   nav {
     display: flex;
+    flex-direction: row;
     align-items: center;
     width: 70%;
     justify-content: space-evenly;
@@ -54,7 +55,7 @@ export const HeaderStyle = styled.header`
       background-image: linear-gradient(to right, #7928ca, #ff0080);
     }
   }
-  
+
   @media(max-width: 800px) {
     flex-direction: column;
     font-size: 12px;
