@@ -20,7 +20,7 @@ export default function SectionMain() {
           </h3>
           <h3 className="name-title1">{languageData.firstNameTitle.pt}</h3>
           <h3 className="name-title2">{languageData.lastNameTitle.pt}</h3>
-          <h3>
+          <h3 className="occupation">
             {language === 'pt-BR'
               ? languageData.occupationTitle.pt
               : languageData.occupationTitle.en}

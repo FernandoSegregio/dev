@@ -7,7 +7,7 @@ export const Section = styled.section`
   height: 100vh;
   align-items: center;
   justify-content: center;
-  column-gap: 20px;
+  column-gap: 60px;
 
   div {
     padding: 0 20px;
@@ -15,6 +15,10 @@ export const Section = styled.section`
 
   h3 {
     font-size: 40px;
+  }
+
+  .occupation {
+    font-family: sen;
   }
 
   .name-title1 {
