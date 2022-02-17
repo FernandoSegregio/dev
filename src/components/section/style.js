@@ -77,9 +77,49 @@ export const Section = styled.section`
       -webkit-text-fill-color: transparent;
     }
   }
+  @media(max-width: 800px) {
+    flex-direction: column;
+    column-gap: 0;
+    height: (100vh -200px);
+    
+  div {
+    display: flex;
+    flex-direction: column;
+    padding: 0, 0;
+    align-items: center;
+  }
+
+
+  h3 {
+    font-size: 20px;
+    width: 300px;
+  }
+
+  .occupation {
+    font-family: sen;
+  }
+
+  .name-title1 {
+    font-size: 55px;
+    font-weight: 700;
+    margin-bottom: -15px;
+    letter-spacing: -2px;
+    width: 300px;
+  }
+
+  .name-title2 {
+    font-size: 55px;
+    font-weight: 700;
+    letter-spacing: -2px;
+  }
+  } 
 `;
 
 export const ImageMain = styled.img`
   width: 265px;
   border-radius: 90px;
+
+  @media (max-width: 800px) {
+    width: 180px;
+  }
 `;

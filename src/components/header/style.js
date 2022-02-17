@@ -8,6 +8,7 @@ export const HeaderStyle = styled.header`
   color: ${(props) => props.theme.text};
   font-size: 20px;
   padding-top: 2%;
+  width: 100vw;
 
   li {
     font-weight: 500;
@@ -40,7 +41,7 @@ export const HeaderStyle = styled.header`
     animation: changeLogoColor 8s infinite;
   }
 
-  @keyframes  changeLogoColor {
+  @keyframes changeLogoColor {
     0% {
       background-image: linear-gradient(to right, #007cf0, #00dfd8);
       color: black;
@@ -52,6 +53,21 @@ export const HeaderStyle = styled.header`
     100% {
       background-image: linear-gradient(to right, #7928ca, #ff0080);
     }
+  }
+  @media (max-width: 800px) {
+    flex-direction: column;
+    font-size: 12px;
+  }
+
+  .logo {
+    font-size: 18px;
+  }
+  nav {
+    flex-direction: column;
+  }
+
+  button {
+    justify-content: center;
   }
 `;
 
