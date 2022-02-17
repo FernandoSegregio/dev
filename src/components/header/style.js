@@ -22,6 +22,8 @@ export const HeaderStyle = styled.header`
   }
 
   button {
+    display: flex;
+    justify-content: flex-end;
     background-color: transparent;
     border: none;
     color: ${(props) => props.theme.text};
