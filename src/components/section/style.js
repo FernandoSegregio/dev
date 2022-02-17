@@ -77,6 +77,7 @@ export const Section = styled.section`
       -webkit-text-fill-color: transparent;
     }
   }
+  
   @media(max-width: 800px) {
     flex-direction: column;
     column-gap: 0;
