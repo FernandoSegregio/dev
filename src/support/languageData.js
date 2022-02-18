@@ -12,6 +12,7 @@ const languageData = {
   titleNav4: { pt: 'Contato', en: 'Contact' },
   altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
   altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
+  altPhoto: { pt: 'Foto Fernando Segregio', en: 'Photo Fernando Segregio' },
 };
 
 export default languageData;

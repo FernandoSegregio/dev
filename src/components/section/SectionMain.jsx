@@ -26,7 +26,14 @@ export default function SectionMain() {
               : languageData.occupationTitle.en}
           </h3>
         </div>
-        <ImageMain src={photo} alt="Foto Fernando Segregio" />
+        <ImageMain
+          src={photo}
+          alt={
+            language === 'pt-BR'
+              ? languageData.altPhoto.pt
+              : languageData.altPhoto.en
+          }
+        />
       </Section>
     </ThemeProvider>
   );
