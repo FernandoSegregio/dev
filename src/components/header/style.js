@@ -57,7 +57,6 @@ export const HeaderStyle = styled.header`
   }
 
   @media(max-width: 800px) {
-    background-color: red;
     flex-direction: column;
 
     nav {
