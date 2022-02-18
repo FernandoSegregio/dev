@@ -57,12 +57,15 @@ export const HeaderStyle = styled.header`
   }
 
   @media(max-width: 800px) {
+    background-color: red;
     flex-direction: column;
-    font-size: 12px;
+
+    nav {
+    flex-direction: column;
   }
 
   .logo {
-    font-size: 18px;
+    visibility: hidden;
   }
   nav {
     flex-direction: column;
@@ -70,7 +73,8 @@ export const HeaderStyle = styled.header`
 
   button {
     justify-content: center;
-  }
+  } 
+}
 `;
 
 export const FlagStyle = styled.div`
