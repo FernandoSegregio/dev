@@ -48,24 +48,28 @@ export const Section = styled.section`
       -webkit-text-fill-color: transparent;
     }
     70% {
-      color: #faebd7;
+      color:  ${(props) => props.theme.title70};
     }
 
     80% {
-      color: #ffffff;
+      color: ${(props) => props.theme.title80};
     }
 
     100% {
-      color: white;
+      color: ${(props) => props.theme.title100};
     }
   }
 
   @keyframes changeTitleColor2 {
     0% {
-      color: white;
+      color: ${(props) => props.theme.title100};
     }
     20% {
-      color: antiquewhite;
+      color:  ${(props) => props.theme.title80};
+    }
+
+    30% {
+      color:  ${(props) => props.theme.title70};
     }
 
     100% {
