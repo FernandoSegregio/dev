@@ -1,4 +1,48 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+
+const changeTitleColor1 = keyframes`
+  0% {
+    background-image: linear-gradient(to right, #007cf0, #00dfd8);
+    color: black;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+  }
+  70% {
+    color: ${(props) => props.theme.title70};
+  }
+
+  80% {
+    color: ${(props) => props.theme.title80};
+  }
+
+  100% {
+    color: ${(props) => props.theme.title100};
+  }
+`;
+
+const changeTitleColor2 = keyframes`
+0% {
+  color: ${(props) => props.theme.title100};
+}
+20% {
+  color: ${(props) => props.theme.title80};
+}
+
+30% {
+  color: ${(props) => props.theme.title70};
+}
+
+100% {
+  background-image: linear-gradient(to right, #7928ca, #ff0080);
+  color: black;
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  -webkit-text-fill-color: transparent;
+}
+`;
 
 export const Section = styled.section`
   background-color: ${(props) => props.theme.background};
@@ -27,7 +71,7 @@ export const Section = styled.section`
     margin-bottom: -50px;
     width: 580px;
     letter-spacing: -5px;
-    animation: changeTitleColor1 8s infinite;
+    animation: ${changeTitleColor1} 8s infinite;
   }
 
   .name-title2 {
@@ -35,57 +79,15 @@ export const Section = styled.section`
     font-weight: 800;
     letter-spacing: -5px;
     margin-bottom: 3%;
-    animation: changeTitleColor2 8s infinite;
+    animation: ${changeTitleColor2} 8s infinite;
   }
 
-  @keyframes changeTitleColor1 {
-    0% {
-      background-image: linear-gradient(to right, #007cf0, #00dfd8);
-      color: black;
-      background-clip: text;
-      -webkit-background-clip: text;
 
-      -webkit-text-fill-color: transparent;
-    }
-    70% {
-      color:  ${(props) => props.theme.title70};
-    }
-
-    80% {
-      color: ${(props) => props.theme.title80};
-    }
-
-    100% {
-      color: ${(props) => props.theme.title100};
-    }
-  }
-
-  @keyframes changeTitleColor2 {
-    0% {
-      color: ${(props) => props.theme.title100};
-    }
-    20% {
-      color:  ${(props) => props.theme.title80};
-    }
-
-    30% {
-      color:  ${(props) => props.theme.title70};
-    }
-
-    100% {
-      background-image: linear-gradient(to right, #7928ca, #ff0080);
-      color: black;
-      background-clip: text;
-      -webkit-background-clip: text;
-
-      -webkit-text-fill-color: transparent;
-    }
-  }
-
-  @media(max-width: 800px) {
+  
+  @media (max-width: 800px) {
     flex-direction: column;
     column-gap: 0;
-    height: (100vh -200px);
+    height: 600px;
 
     div {
       display: flex;
@@ -123,7 +125,7 @@ export const ImageMain = styled.img`
   width: 265px;
   border-radius: 90px;
 
-  @media(max-width: 800px) {
+  @media (max-width: 800px) {
     width: 180px;
   }
 `;
