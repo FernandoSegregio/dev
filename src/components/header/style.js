@@ -57,19 +57,11 @@ export const HeaderStyle = styled.header`
   }
 
   @media(max-width: 800px) {
-    flex-direction: column;
-
-    nav {
-    flex-direction: column;
-  }
 
   .logo {
     visibility: hidden;
   }
-  nav {
-    flex-direction: column;
-  }
-
+  
   button {
     justify-content: center;
   } 

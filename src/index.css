@@ -2,3 +2,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+.c-PJLV{
+    visibility: hidden;
+    height: 0;
+  }
+
+  @media (max-width: 800px) {
+    .c-PJLV {
+        visibility: visible;
+      }
+
+    .c-PJLV > button {
+        margin: 10px;
+    }
+    .nav {
+        visibility: hidden;
+        height: 0;
+        width: 0;
+      }
+  }

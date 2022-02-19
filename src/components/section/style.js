@@ -92,7 +92,7 @@ export const Section = styled.section`
     div {
       display: flex;
       flex-direction: column;
-      padding: 0, 0;
+      padding: 0;
       align-items: center;
     }
 

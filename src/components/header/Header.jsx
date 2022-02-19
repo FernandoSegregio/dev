@@ -8,6 +8,7 @@ import PortfolioContext from '../../context/PortfolioContext';
 import { HeaderStyle, FlagStyle } from './style';
 import languageData from '../../support/languageData';
 import { dark, light } from '../../style/theme/theme';
+import DropdownMenuHamb from './Hamburguer';
 
 const titleHeader = '< NandoDev />';
 
@@ -22,11 +23,10 @@ export default function Header() {
 
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
+      {DropdownMenuHamb()}
       <HeaderStyle>
-        <nav>
-          <li className="logo">
-            {titleHeader}
-          </li>
+        <nav className="nav">
+          <li className="logo">{titleHeader}</li>
           <li>
             {language === 'pt-BR'
               ? languageData.titleNav1.pt
