@@ -57,7 +57,7 @@ export const HeaderStyle = styled.header`
   }
 
   @media(max-width: 800px) {
-
+    padding-top: 0;
   .logo {
     visibility: hidden;
   }
