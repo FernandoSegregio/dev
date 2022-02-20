@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import SectionMain from './components/section/SectionMain';
 import PortfolioProvider from './context/PortfolioProvider';
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <SectionMain />
+      <Footer />
     </PortfolioProvider>
   );
 }
