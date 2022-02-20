@@ -5,7 +5,6 @@ import photo from '../../images/photo.png';
 import { ImageMain, MainStyled } from './style';
 import languageData from '../../support/languageData';
 import { dark, light } from '../../style/theme/theme';
-import SectionAbout from '../section/SectionAbout';
 
 export default function Main() {
   const { language, theme } = useContext(PortfolioContext);
@@ -35,7 +34,6 @@ export default function Main() {
               : languageData.altPhoto.en
           }
         />
-        <SectionAbout />
       </MainStyled>
     </ThemeProvider>
   );

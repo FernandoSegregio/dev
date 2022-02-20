@@ -4,6 +4,7 @@ import Header from './components/header/Header';
 import Main from './components/main/Main';
 import PortfolioProvider from './context/PortfolioProvider';
 import GlobalStyle from './style/GlobalStyle';
+import SectionAbout from './components/section/SectionAbout';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <GlobalStyle />
       <Header />
       <Main />
+      <SectionAbout />
       <Footer />
     </PortfolioProvider>
   );
