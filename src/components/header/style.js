@@ -10,6 +10,13 @@ export const HeaderStyle = styled.header`
   padding-top: 20px;
   width: 100vw;
   
+  ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-left: 40px;
+  }
 
   li {
     font-weight: 500;
