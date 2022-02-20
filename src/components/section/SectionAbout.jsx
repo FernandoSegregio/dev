@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
-import SectionAboutStyle from './style';
+import { SectionAboutStyle } from './style';
 import { dark, light } from '../../style/theme/theme';
 import PortfolioContext from '../../context/PortfolioContext';
 import languageData from '../../support/languageData';
