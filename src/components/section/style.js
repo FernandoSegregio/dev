@@ -14,11 +14,11 @@ const SectionAboutStyle = styled.section`
     font-family: sen;
     padding-bottom: 30px;
   }
-  
-  @media (max-width: 800px) {
-    
-  }
 
+  @media (max-width: 800px) {
+    font-size: 20px;
+    padding: 10px 33px;
+  }
 `;
 
 export default SectionAboutStyle;
