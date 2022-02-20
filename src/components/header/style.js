@@ -9,10 +9,12 @@ export const HeaderStyle = styled.header`
   font-size: 20px;
   padding-top: 20px;
   width: 100vw;
+  
 
   li {
     font-weight: 500;
     list-style: none;
+    cursor: pointer;
   }
 
   nav {

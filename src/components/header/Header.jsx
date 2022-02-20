@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import { IoMdMoon as Moon } from 'react-icons/io';
 import { FiSun as Sun } from 'react-icons/fi';
+import { Link } from 'react-scroll';
 import brazil from '../../images/brazil-circle.svg';
 import EUA from '../../images/EUA-circle.svg';
 import PortfolioContext from '../../context/PortfolioContext';
@@ -26,27 +27,31 @@ export default function Header() {
       {DropdownMenuHamb()}
       <HeaderStyle>
         <nav className="nav">
-          <li className="logo">{titleHeader}</li>
-          <li>
-            {language === 'pt-BR'
-              ? languageData.titleNav1.pt
-              : languageData.titleNav1.en}
-          </li>
-          <li>
-            {language === 'pt-BR'
-              ? languageData.titleNav2.pt
-              : languageData.titleNav2.en}
-          </li>
-          <li>
-            {language === 'pt-BR'
-              ? languageData.titleNav3.pt
-              : languageData.titleNav3.en}
-          </li>
-          <li>
-            {language === 'pt-BR'
-              ? languageData.titleNav4.pt
-              : languageData.titleNav4.en}
-          </li>
+          <ul>
+            <li className="logo">{titleHeader}</li>
+            <Link to="about" spy smooth offset={-50} duration={5000}>
+              <li>
+                {language === 'pt-BR'
+                  ? languageData.titleNav1.pt
+                  : languageData.titleNav1.en}
+              </li>
+            </Link>
+            <li>
+              {language === 'pt-BR'
+                ? languageData.titleNav2.pt
+                : languageData.titleNav2.en}
+            </li>
+            <li>
+              {language === 'pt-BR'
+                ? languageData.titleNav3.pt
+                : languageData.titleNav3.en}
+            </li>
+            <li>
+              {language === 'pt-BR'
+                ? languageData.titleNav4.pt
+                : languageData.titleNav4.en}
+            </li>
+          </ul>
         </nav>
         <button
           type="button"

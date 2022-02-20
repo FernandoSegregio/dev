@@ -10,7 +10,7 @@ export default function SectionAbout() {
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <SectionAboutStyle>
-        <h3>
+        <h3 className="about">
           {language === 'pt-BR'
             ? languageData.titleNav1.pt
             : languageData.titleNav1.en}
