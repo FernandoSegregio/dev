@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { styled, keyframes } from '@stitches/react';
 import { violet, mauve, blackA } from '@radix-ui/colors';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
+import PortfolioContext from '../../context/PortfolioContext';
+import languageData from '../../support/languageData';
 
 const slideUpAndFade = keyframes({
   '0%': { opacity: 0, transform: 'translateY(2px)' },
@@ -96,6 +98,7 @@ const IconButton = styled('button', {
 });
 
 function DropdownMenuHamb() {
+  const { language } = useContext(PortfolioContext);
   return (
     <Box className="menu">
       <DropdownMenu className="hamburguer">
@@ -106,10 +109,26 @@ function DropdownMenuHamb() {
         </DropdownMenuTrigger>
 
         <DropdownMenuContent sideOffset={5}>
-          <DropdownMenuItem>Sobre</DropdownMenuItem>
-          <DropdownMenuItem>Projetos</DropdownMenuItem>
-          <DropdownMenuItem>Habilidades</DropdownMenuItem>
-          <DropdownMenuItem>Contato</DropdownMenuItem>
+          <DropdownMenuItem>
+            {language === 'pt-BR'
+              ? languageData.titleNav1.pt
+              : languageData.titleNav1.en}
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            {language === 'pt-BR'
+              ? languageData.titleNav2.pt
+              : languageData.titleNav2.en}
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            {language === 'pt-BR'
+              ? languageData.titleNav3.pt
+              : languageData.titleNav3.en}
+          </DropdownMenuItem>
+          <DropdownMenuItem>
+            {language === 'pt-BR'
+              ? languageData.titleNav4.pt
+              : languageData.titleNav4.en}
+          </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
     </Box>
