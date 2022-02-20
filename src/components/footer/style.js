@@ -7,6 +7,7 @@ const FooterStyle = styled.footer`
   color: ${(props) => props.theme.text};
   font-size: 12px;
   width: 100%;
+  padding: 20px;
 
   h4 {
     font-family: sans-serif;
