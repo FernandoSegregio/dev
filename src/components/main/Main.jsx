@@ -2,16 +2,17 @@ import React, { useContext } from 'react';
 import { ThemeProvider } from 'styled-components';
 import PortfolioContext from '../../context/PortfolioContext';
 import photo from '../../images/photo.png';
-import { ImageMain, Section } from './style';
+import { ImageMain, MainStyled } from './style';
 import languageData from '../../support/languageData';
 import { dark, light } from '../../style/theme/theme';
+import SectionAbout from '../section/SectionAbout';
 
 export default function Main() {
   const { language, theme } = useContext(PortfolioContext);
 
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
-      <Section>
+      <MainStyled>
         <div>
           <h3>
             {language === 'pt-BR'
@@ -34,7 +35,8 @@ export default function Main() {
               : languageData.altPhoto.en
           }
         />
-      </Section>
+        <SectionAbout />
+      </MainStyled>
     </ThemeProvider>
   );
 }

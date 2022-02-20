@@ -44,7 +44,7 @@ const changeTitleColor2 = keyframes`
 }
 `;
 
-export const Main = styled.main`
+export const MainStyled = styled.main`
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   display: flex;
