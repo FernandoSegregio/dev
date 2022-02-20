@@ -16,8 +16,11 @@ export const SectionAboutStyle = styled.section`
   }
 
   @media (max-width: 800px) {
-    font-size: 15px;
     padding: 10px 33px;
+
+    h3 {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -45,8 +48,11 @@ export const SectionSkillsStyle = styled.section`
   }
 
   @media (max-width: 800px) {
-    font-size: 15px;
     padding: 10px 33px;
+
+    h3 {
+      font-size: 30px;
+    }
 
     img {
       width: 45px;
