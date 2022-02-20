@@ -7,7 +7,7 @@ export const HeaderStyle = styled.header`
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   font-size: 20px;
-  padding-top: 2%;
+  padding-top: 20px;
   width: 100vw;
 
   li {
@@ -56,16 +56,16 @@ export const HeaderStyle = styled.header`
     }
   }
 
-  @media(max-width: 800px) {
-    padding-top: 0;
-  .logo {
-    visibility: hidden;
+  @media (max-width: 800px) {
+    padding-top: 15px;
+    .logo {
+      visibility: hidden;
+    }
+
+    button {
+      justify-content: center;
+    }
   }
-  
-  button {
-    justify-content: center;
-  } 
-}
 `;
 
 export const FlagStyle = styled.div`

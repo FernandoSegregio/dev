@@ -84,16 +84,15 @@ const IconButton = styled('button', {
   all: 'unset',
   fontFamily: 'inherit',
   borderRadius: '100%',
-  height: 35,
-  width: 35,
+  height: 30,
+  width: 30,
   display: 'inline-flex',
   alignItems: 'center',
   justifyContent: 'center',
-  color: violet.violet11,
-  backgroundColor: 'white',
+  color: '#8c8787e8',
+  backgroundColor: '#302d2de8',
   boxShadow: `0 2px 10px ${blackA.blackA7}`,
   '&:hover': { backgroundColor: violet.violet3 },
-  '&:focus': { boxShadow: '0 0 0 2px black' },
 });
 
 function DropdownMenuHamb() {
