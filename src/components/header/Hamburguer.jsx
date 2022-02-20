@@ -1,4 +1,5 @@
 import React, { useContext } from 'react';
+import { Link } from 'react-scroll';
 import { styled, keyframes } from '@stitches/react';
 import { violet, mauve, blackA } from '@radix-ui/colors';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
@@ -110,9 +111,11 @@ function DropdownMenuHamb() {
 
         <DropdownMenuContent sideOffset={5}>
           <DropdownMenuItem>
-            {language === 'pt-BR'
-              ? languageData.titleNav1.pt
-              : languageData.titleNav1.en}
+            <Link to="about" spy smooth offset={-50} duration={5000}>
+              {language === 'pt-BR'
+                ? languageData.titleNav1.pt
+                : languageData.titleNav1.en}
+            </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
             {language === 'pt-BR'
