@@ -6,7 +6,7 @@ import { ImageMain, Section } from './style';
 import languageData from '../../support/languageData';
 import { dark, light } from '../../style/theme/theme';
 
-export default function SectionMain() {
+export default function Main() {
   const { language, theme } = useContext(PortfolioContext);
 
   return (
