@@ -33,12 +33,12 @@ export const SectionSkillsStyle = styled.section`
   div {
     display: flex;
     justify-content: center;
+    padding-top: 30px;
   }
 
   h3 {
     font-size: 40px;
     font-family: sen;
-    padding-bottom: 30px;
   }
 
   p {
@@ -51,6 +51,14 @@ export const SectionSkillsStyle = styled.section`
     width: 100px;
     height: 100px;
     margin: 20px;
+  }
+
+  h5 {
+    font-size: 25px;
+    font-family: sen;
+    padding-top: 30px;
+    /* writing-mode: vertical-rl;
+    transform: rotate(180deg); */
   }
 
   @media (max-width: 800px) {
@@ -101,8 +109,8 @@ export const SectionContactsStyle = styled.section`
     margin-top: 1%;
     width: 100%;
     height: 40px;
-    background-color: #504c4ce8;
-    border: none;
+    background-color: ${(props) => props.theme.backForms};;
+    border: 1px solid ${(props) => props.theme.border};
     font-family: sans-serif;
     font-size: 16px;
     border-radius: 3px;
@@ -114,14 +122,23 @@ export const SectionContactsStyle = styled.section`
     height: 210px;
     margin-top: 1%;
     width: 100%;
-    background-color: #504c4ce8;
+    background-color: ${(props) => props.theme.backForms};;
     font-family: sans-serif;
     font-size: 17px;
     resize: none;
-    border: none;
+    border: 1px solid ${(props) => props.theme.border};
     border-radius: 3px;
     color: var(--antiwhite);
     padding: 5px 10px;
+  }
+
+  .button-form {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    column-gap: 29%;
   }
 
   @media (max-width: 800px) {
@@ -136,30 +153,31 @@ export const SectionContactsStyle = styled.section`
     }
 
     div {
-      width: 100%
+      width: 100%;
     }
 
+    .button-form {
+      column-gap: 14%;
+    }
   }
 `;
 
 export const ButtonSubmitContact = styled.button`
-  color: #504c4ce8;
-  width: 25%;
+  background-color: ${(props) => props.theme.backForms};
+  color: ${(props) => props.theme.textButton};
+  border-radius: 3px;
+  width: 20%;
+  height: 20%;
+  font-size: 18px;
+  border: 1px solid ${(props) => props.theme.border};;
   font-size: 18px;
   padding: 1%;
-  border: 1px solid '#302d2de8';
-  border-radius: 3px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1%;
-
-  button {
-    background-color: '#949292';
-  }
+  cursor: pointer;
+  
+  
 
   @media (max-width: 800px) {
-    font-size: 12px;
+    font-size: 8px;
   }
-
 `;

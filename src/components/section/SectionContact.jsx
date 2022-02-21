@@ -66,7 +66,7 @@ export default function SectionContact() {
               <textarea
                 id="text-contact"
                 rows={9}
-                spellheck
+                spellheck="true"
                 placeholder={
                   language === 'pt-BR'
                     ? languageData.textInputMsg.pt
@@ -76,11 +76,18 @@ export default function SectionContact() {
             </label>
           </div>
         </form>
-        <ButtonSubmitContact type="submit">
-          {language === 'pt-BR'
-            ? languageData.textButtonMsg.pt
-            : languageData.textButtonMsg.en}
-        </ButtonSubmitContact>
+        <div className="button-form">
+          <ButtonSubmitContact type="reset">
+            {language === 'pt-BR'
+              ? languageData.textButtonClear.pt
+              : languageData.textButtonClear.en}
+          </ButtonSubmitContact>
+          <ButtonSubmitContact type="submit">
+            {language === 'pt-BR'
+              ? languageData.textButtonEnv.pt
+              : languageData.textButtonEnv.en}
+          </ButtonSubmitContact>
+        </div>
       </SectionContactsStyle>
     </ThemeProvider>
   );
