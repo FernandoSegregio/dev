@@ -43,7 +43,7 @@ const FooterStyle = styled.footer`
   }
 
   @media (max-width: 800px) {
-    padding: 15px;
+    padding: 15px 30px;
     
     h4 {
       text-align: center;
