@@ -9,7 +9,7 @@ const languageData = {
   titleNav1: { pt: 'Sobre', en: 'About' },
   titleNav2: { pt: 'Projetos', en: 'Projects' },
   titleNav3: { pt: 'Habilidades', en: 'Skills' },
-  titleHard: { pt: 'Técnicas', en: 'Hard' },
+  titleHard: { pt: 'Tecnologias', en: 'Hard' },
   titleSoft: { pt: 'Comportamentais', en: 'Soft' },
   titleNav4: { pt: 'Contato', en: 'Contact' },
   altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
@@ -48,20 +48,20 @@ const languageData = {
     en: 'Name:',
   },
   textInputName: {
-    pt: 'Digite seu nome completo',
-    en: 'Enter your full name',
+    pt: 'Nome Completo',
+    en: 'Full Name',
   },
   textInputEmail: {
-    pt: 'Digite seu email no formato email@email....',
-    en: 'Enter your email in the format email@email....',
+    pt: 'Email',
+    en: 'Email Address',
   },
   textLabelSubject: {
     pt: 'Assunto:',
     en: 'Subject:',
   },
   textInputSubject: {
-    pt: 'Digite o assunto',
-    en: 'Enter the subject',
+    pt: 'Assunto',
+    en: 'Subject',
   },
   textLabelMsg: {
     pt: 'Mensagem:',
