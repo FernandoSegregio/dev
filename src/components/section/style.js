@@ -41,6 +41,12 @@ export const SectionSkillsStyle = styled.section`
     padding-bottom: 30px;
   }
 
+  p {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   img {
     width: 100px;
     height: 100px;

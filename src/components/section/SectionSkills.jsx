@@ -26,18 +26,48 @@ export default function SectionSkills() {
             : languageData.titleNav3.en}
         </h3>
         <div>
-          <img src={htmlIcon} alt="HTML 5" />
-          <img src={cssIcon} alt="CSS 3" />
-          <img src={javascriptIcon} alt="Javascript" />
-          <img src={reactIcon} alt="React" />
-          <img src={jestIcon} alt="Jest" />
+          <p>
+            <img src={htmlIcon} alt="HTML 5" />
+            HTML 5
+          </p>
+          <p>
+            <img src={cssIcon} alt="CSS 3" />
+            CSS 3
+          </p>
+          <p>
+            <img src={javascriptIcon} alt="Javascript" />
+            Javascript
+          </p>
+          <p>
+            <img src={reactIcon} alt="React" />
+            React
+          </p>
+          <p>
+            <img src={jestIcon} alt="Jest" />
+            Jest
+          </p>
         </div>
         <div>
-          <img src={styledIcon} alt="Styled Components" />
-          <img src={bootstrapIcon} alt="Bootstrap" />
-          <img src={mySQLIcon} alt="MySQL" />
-          <img src={nodeIcon} alt="Node" />
-          <img src={gitIcon} alt="Git" />
+          <p>
+            <img src={styledIcon} alt="Styled Components" />
+            Styled Components
+          </p>
+          <p>
+            <img src={bootstrapIcon} alt="Bootstrap" />
+            Bootstrap
+          </p>
+          <p>
+            <img src={mySQLIcon} alt="MySQL" />
+            MySQL
+          </p>
+          <p>
+            <img src={nodeIcon} alt="Node" />
+            Node
+          </p>
+          <p>
+            <img src={gitIcon} alt="Git" />
+            Git
+          </p>
         </div>
       </SectionSkillsStyle>
     </ThemeProvider>
