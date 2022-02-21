@@ -9,6 +9,8 @@ const languageData = {
   titleNav1: { pt: 'Sobre', en: 'About' },
   titleNav2: { pt: 'Projetos', en: 'Projects' },
   titleNav3: { pt: 'Habilidades', en: 'Skills' },
+  titleHard: { pt: 'Técnicas', en: 'Hard' },
+  titleSoft: { pt: 'Comportamentais', en: 'Soft' },
   titleNav4: { pt: 'Contato', en: 'Contact' },
   altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
   altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
@@ -69,7 +71,11 @@ const languageData = {
     pt: 'Digite sua mensagem...',
     en: 'Type your message',
   },
-  textButtonMsg: {
+  textButtonClear: {
+    pt: 'Limpar Informaçãoes',
+    en: 'Clear Information',
+  },
+  textButtonEnv: {
     pt: 'Enviar Menssagem',
     en: 'Send Message',
   },
