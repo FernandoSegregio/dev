@@ -6,6 +6,7 @@ import PortfolioProvider from './context/PortfolioProvider';
 import GlobalStyle from './style/GlobalStyle';
 import SectionAbout from './components/section/SectionAbout';
 import SectionSkills from './components/section/SectionSkills';
+import SectionContact from './components/section/SectionContact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Main />
       <SectionAbout />
       <SectionSkills />
+      <SectionContact />
       <Footer />
     </PortfolioProvider>
   );

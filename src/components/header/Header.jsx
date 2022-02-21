@@ -48,11 +48,13 @@ export default function Header() {
                   : languageData.titleNav3.en}
               </li>
             </Link>
-            <li>
-              {language === 'pt-BR'
-                ? languageData.titleNav4.pt
-                : languageData.titleNav4.en}
-            </li>
+            <Link to="contact" spy smooth offset={-50} duration={5000}>
+              <li>
+                {language === 'pt-BR'
+                  ? languageData.titleNav4.pt
+                  : languageData.titleNav4.en}
+              </li>
+            </Link>
           </ul>
         </nav>
         <button

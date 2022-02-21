@@ -130,9 +130,11 @@ function DropdownMenuHamb() {
             </Link>
           </DropdownMenuItem>
           <DropdownMenuItem>
-            {language === 'pt-BR'
-              ? languageData.titleNav4.pt
-              : languageData.titleNav4.en}
+            <Link to="contact" spy smooth offset={-50} duration={5000}>
+              {language === 'pt-BR'
+                ? languageData.titleNav4.pt
+                : languageData.titleNav4.en}
+            </Link>
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>

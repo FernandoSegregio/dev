@@ -41,9 +41,41 @@ const languageData = {
     
     Family and God are always with me!`,
   },
+  textLabelName: {
+    pt: 'Nome:',
+    en: 'Name:',
+  },
+  textInputName: {
+    pt: 'Digite seu nome completo',
+    en: 'Enter your full name',
+  },
+  textInputEmail: {
+    pt: 'Digite seu email no formato email@email....',
+    en: 'Enter your email in the format email@email....',
+  },
+  textLabelSubject: {
+    pt: 'Assunto:',
+    en: 'Subject:',
+  },
+  textInputSubject: {
+    pt: 'Digite o assunto',
+    en: 'Enter the subject',
+  },
+  textLabelMsg: {
+    pt: 'Mensagem:',
+    en: 'Message:',
+  },
+  textInputMsg: {
+    pt: 'Digite sua mensagem...',
+    en: 'Type your message',
+  },
+  textButtonMsg: {
+    pt: 'Enviar Menssagem',
+    en: 'Send Message',
+  },
   textFooter: {
-    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito Amor e Café',
-    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of Love and Coffee',
+    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito, Amor e Café (que são a mesma coisa)',
+    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of, Love and Coffee (which is the same)',
   },
 };
 
