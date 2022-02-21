@@ -25,6 +25,11 @@ export default function SectionSkills() {
             ? languageData.titleNav3.pt
             : languageData.titleNav3.en}
         </h3>
+        <h5 className="hard">
+          {language === 'pt-BR'
+            ? languageData.titleHard.pt
+            : languageData.titleHard.en}
+        </h5>
         <div>
           <p>
             <img src={htmlIcon} alt="HTML 5" />
@@ -69,6 +74,11 @@ export default function SectionSkills() {
             Git
           </p>
         </div>
+        <h5 className="soft">
+          {language === 'pt-BR'
+            ? languageData.titleSoft.pt
+            : languageData.titleSoft.en}
+        </h5>
       </SectionSkillsStyle>
     </ThemeProvider>
   );
