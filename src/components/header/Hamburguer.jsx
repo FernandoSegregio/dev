@@ -93,7 +93,7 @@ const IconButton = styled('button', {
   alignItems: 'center',
   justifyContent: 'center',
   color: '#8c8787e8',
-  backgroundColor: '#302d2de8',
+  // backgroundColor: `${(props) => props.theme.background}`,
   boxShadow: `0 2px 10px ${blackA.blackA7}`,
   '&:hover': { backgroundColor: violet.violet3 },
 });
