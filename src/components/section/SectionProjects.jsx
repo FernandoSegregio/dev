@@ -11,7 +11,7 @@ export default function SectionProjects() {
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <SectionProjectsStyle>
-        <h3 className="contact">
+        <h3 className="projects">
           {language === 'pt-BR'
             ? languageData.titleNav2.pt
             : languageData.titleNav2.en}
