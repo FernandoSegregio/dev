@@ -88,12 +88,12 @@ const languageData = {
     en: 'Type your message',
   },
   textButtonClear: {
-    pt: 'Limpar Informaçãoes',
-    en: 'Clear Information',
+    pt: 'Limpar',
+    en: 'Clear',
   },
   textButtonEnv: {
-    pt: 'Enviar Menssagem',
-    en: 'Send Message',
+    pt: 'Enviar',
+    en: 'Send',
   },
   textFooter: {
     pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito, Amor e Café (que no fim são a mesma coisa)',
