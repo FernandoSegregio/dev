@@ -16,7 +16,7 @@ const languageData = {
   altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
   altPhoto: { pt: 'Foto Fernando Segregio', en: 'Photo Fernando Segregio' },
   textAbout: {
-    pt: `Desenvolvedor Front-end pela @Trybe
+    pt: `Desenvolvedor Front-end pela @Trybe.
 
     Amplo domínio em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente  gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.
     
@@ -29,7 +29,7 @@ const languageData = {
     Apaixonado por esportes, triatleta amador, apreciador de novas tecnologias e inovação, sempre se atualizando e buscando novos conhecimentos. 
     
     Família e Deus estão sempre comigo!`,
-    en: `Front-end developer by @Trybe
+    en: `Front-end developer by @Trybe.
  
     Broad domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.
     
