@@ -104,7 +104,7 @@ export const SectionContactsStyle = styled.section`
   background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   width: 100%;
-  padding: 80px 85px;
+  padding: 40px 85px;
 
   h3 {
     font-size: 40px;
@@ -203,5 +203,26 @@ export const ButtonSubmitContact = styled.button`
 
   @media (max-width: 800px) {
     font-size: 8px;
+  }
+`;
+
+export const SectionProjectsStyle = styled.section`
+  background-color: ${(props) => props.theme.background};
+  color: ${(props) => props.theme.text};
+  width: 100%;
+  padding: 40px 85px;
+
+  h3 {
+    font-size: 40px;
+    font-family: sen;
+    padding-bottom: 30px;
+  }
+
+  @media (max-width: 800px) {
+    padding: 36px 33px;
+
+    h3 {
+      font-size: 30px;
+    }
   }
 `;

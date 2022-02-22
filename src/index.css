@@ -8,6 +8,38 @@
     height: 0;
   }
 
+  .carousel{
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    width: 100%;
+  }
+
+  .card {
+    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    height: 400px;
+    margin-bottom: 10px;
+    margin-left: 22px;
+    padding: 30px;
+    width: 50%;
+    white-space: normal;
+    text-align: center;
+  }
+
+  .card > img {
+    height: 250px;
+    background: transparent;
+  }
+
+  .card > p {
+    text-align: justify;
+  }
+
+  .card > h4 {
+    padding: 2% 0;
+  }
+
   @media (max-width: 800px) {
     .c-PJLV {
         visibility: visible;
