@@ -33,12 +33,12 @@ export const SectionSkillsStyle = styled.section`
   div {
     display: flex;
     justify-content: center;
-    padding-top: 30px;
   }
 
   h3 {
     font-size: 40px;
     font-family: sen;
+    padding-bottom: 30px;
   }
 
   p {
@@ -59,14 +59,25 @@ export const SectionSkillsStyle = styled.section`
     padding-top: 30px;
     /* writing-mode: vertical-rl;
     transform: rotate(180deg); */
+    /* position: relative;  */
+    top: 122px;
+    left: -4%;
   }
 
   @media (max-width: 800px) {
-    padding: 36px 33px;
+    padding: 36px 40px;
 
     h3 {
       font-size: 30px;
+      padding-bottom: 10px;
     }
+
+    div {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    }
+
 
     img {
       width: 45px;
@@ -76,6 +87,11 @@ export const SectionSkillsStyle = styled.section`
 
     p {
       font-size: 12px;
+      text-align: center;
+    }
+
+    h5 {
+      font-size: 15px;
     }
   }
 `;
@@ -94,22 +110,27 @@ export const SectionContactsStyle = styled.section`
 
   form {
     display: flex;
-    column-gap: 60px;
-    row-gap: 100px;
+    flex-direction: column;
   }
 
   div {
     display: flex;
     flex-direction: column;
     width: 50%;
-    row-gap: 20px;
+  }
+
+  .form {
+    column-gap: 60px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
   }
 
   input {
     margin-top: 1%;
     width: 100%;
     height: 40px;
-    background-color: ${(props) => props.theme.backForms};;
+    background-color: ${(props) => props.theme.backForms};
     border: 1px solid ${(props) => props.theme.border};
     font-family: sans-serif;
     font-size: 16px;
@@ -119,10 +140,10 @@ export const SectionContactsStyle = styled.section`
   }
 
   textarea {
-    height: 210px;
+    height: 168px;
     margin-top: 1%;
     width: 100%;
-    background-color: ${(props) => props.theme.backForms};;
+    background-color: ${(props) => props.theme.backForms};
     font-family: sans-serif;
     font-size: 17px;
     resize: none;
@@ -138,7 +159,7 @@ export const SectionContactsStyle = styled.section`
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    column-gap: 29%;
+    column-gap: 33%;
   }
 
   @media (max-width: 800px) {
@@ -147,7 +168,7 @@ export const SectionContactsStyle = styled.section`
     h3 {
       font-size: 30px;
     }
-    form {
+    .form {
       flex-direction: column;
       row-gap: 16px;
     }
@@ -169,13 +190,12 @@ export const ButtonSubmitContact = styled.button`
   width: 20%;
   height: 20%;
   font-size: 18px;
-  border: 1px solid ${(props) => props.theme.border};;
-  font-size: 18px;
+  border: 1px solid ${(props) => props.theme.border};
+  font-size: 17px;
   padding: 1%;
   margin-top: 1%;
+  font-weight: normal;
   cursor: pointer;
-  
-  
 
   @media (max-width: 800px) {
     font-size: 8px;

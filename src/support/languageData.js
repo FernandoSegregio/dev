@@ -47,6 +47,22 @@ const languageData = {
     pt: 'Nome:',
     en: 'Name:',
   },
+  softCommunication: {
+    pt: 'Comunicação',
+    en: 'Communication',
+  },
+  softEmpathy: {
+    pt: 'Empatia',
+    en: 'Empathy',
+  },
+  softTeamWork: {
+    pt: 'Trabalho em Equipe',
+    en: 'Team Work',
+  },
+  softTime: {
+    pt: 'Gestão do Tempo',
+    en: 'Time Management',
+  },
   textInputName: {
     pt: 'Nome Completo',
     en: 'Full Name',
@@ -80,8 +96,8 @@ const languageData = {
     en: 'Send Message',
   },
   textFooter: {
-    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito, Amor e Café (que são a mesma coisa)',
-    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of, Love and Coffee (which is the same)',
+    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito, Amor e Café (que no fim são a mesma coisa)',
+    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of, Love and Coffee (that in the end it is the same thing)',
   },
 };
 

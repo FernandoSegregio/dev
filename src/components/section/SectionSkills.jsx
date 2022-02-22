@@ -14,6 +14,10 @@ import bootstrapIcon from '../../images/icons_skills/bootstrap_icon.svg';
 import jestIcon from '../../images/icons_skills/jest_icon.svg';
 import mySQLIcon from '../../images/icons_skills/mySQL_icon.svg';
 import nodeIcon from '../../images/icons_skills/node_icon.svg';
+import communicationIcon from '../../images/icons_skills/communication_icon.svg';
+import empathyIcon from '../../images/icons_skills/empathy_icon.svg';
+import teamWorkIcon from '../../images/icons_skills/team_work_icon.svg';
+import timeIcon from '../../images/icons_skills/time_icon.svg';
 
 export default function SectionSkills() {
   const { theme, language } = useContext(PortfolioContext);
@@ -79,6 +83,60 @@ export default function SectionSkills() {
             ? languageData.titleSoft.pt
             : languageData.titleSoft.en}
         </h5>
+        <div>
+          <p>
+            <img
+              src={communicationIcon}
+              alt={
+                language === 'pt-BR'
+                  ? languageData.softCommunication.pt
+                  : languageData.softCommunication.en
+              }
+            />
+            {language === 'pt-BR'
+              ? languageData.softCommunication.pt
+              : languageData.softCommunication.en}
+          </p>
+          <p>
+            <img
+              src={empathyIcon}
+              alt={
+                language === 'pt-BR'
+                  ? languageData.softEmpathy.pt
+                  : languageData.softEmpathy.en
+              }
+            />
+            {language === 'pt-BR'
+              ? languageData.softEmpathy.pt
+              : languageData.softEmpathy.en}
+          </p>
+          <p>
+            <img
+              src={teamWorkIcon}
+              alt={
+                language === 'pt-BR'
+                  ? languageData.softTeamWork.pt
+                  : languageData.softTeamWork.en
+              }
+            />
+            {language === 'pt-BR'
+              ? languageData.softTeamWork.pt
+              : languageData.softTeamWork.en}
+          </p>
+          <p>
+            <img
+              src={timeIcon}
+              alt={
+                language === 'pt-BR'
+                  ? languageData.softTime.pt
+                  : languageData.softTime.en
+              }
+            />
+            {language === 'pt-BR'
+              ? languageData.softTime.pt
+              : languageData.softTime.en}
+          </p>
+        </div>
       </SectionSkillsStyle>
     </ThemeProvider>
   );
