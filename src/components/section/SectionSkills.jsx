@@ -83,7 +83,7 @@ export default function SectionSkills() {
             ? languageData.titleSoft.pt
             : languageData.titleSoft.en}
         </h5>
-        <div>
+        <div className="soft">
           <p>
             <img
               src={communicationIcon}

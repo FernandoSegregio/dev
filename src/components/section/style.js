@@ -64,6 +64,10 @@ export const SectionSkillsStyle = styled.section`
     left: -4%;
   }
 
+  .soft {
+    column-gap: 2%;
+  }
+
   @media (max-width: 800px) {
     padding: 36px 40px;
 
