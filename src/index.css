@@ -53,4 +53,7 @@
         height: 0;
         width: 0;
       }
+      .card{
+        width: 95%;
+      }
   }
