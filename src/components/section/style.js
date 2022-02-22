@@ -182,7 +182,7 @@ export const SectionContactsStyle = styled.section`
     }
 
     .button-form {
-      column-gap: 14%;
+      column-gap: 8%;
     }
   }
 `;
@@ -202,7 +202,9 @@ export const ButtonSubmitContact = styled.button`
   cursor: pointer;
 
   @media (max-width: 800px) {
-    font-size: 8px;
+    font-size: 14px;
+    width: 33%;
+    height: 34px;
   }
 `;
 
