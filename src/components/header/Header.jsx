@@ -29,7 +29,7 @@ export default function Header() {
         <nav className="nav">
           <ul>
             <li className="logo">{titleHeader}</li>
-            <Link to="about" spy smooth offset={-50} duration={5000}>
+            <Link to="about" spy smooth offset={-50} duration={1000}>
               <li>
                 {language === 'pt-BR'
                   ? languageData.titleNav1.pt
@@ -41,14 +41,14 @@ export default function Header() {
                 ? languageData.titleNav2.pt
                 : languageData.titleNav2.en}
             </li>
-            <Link to="skills" spy smooth offset={-50} duration={5000}>
+            <Link to="skills" spy smooth offset={-50} duration={1000}>
               <li>
                 {language === 'pt-BR'
                   ? languageData.titleNav3.pt
                   : languageData.titleNav3.en}
               </li>
             </Link>
-            <Link to="contact" spy smooth offset={-50} duration={5000}>
+            <Link to="contact" spy smooth offset={-50} duration={1000}>
               <li>
                 {language === 'pt-BR'
                   ? languageData.titleNav4.pt
