@@ -33,6 +33,7 @@ export const SectionSkillsStyle = styled.section`
   div {
     display: flex;
     justify-content: center;
+    column-gap: 2%;
   }
 
   h3 {
@@ -56,12 +57,8 @@ export const SectionSkillsStyle = styled.section`
   h5 {
     font-size: 25px;
     font-family: sen;
-    padding-top: 30px;
-    /* writing-mode: vertical-rl;
-    transform: rotate(180deg); */
-    /* position: relative;  */
-    top: 122px;
-    left: -4%;
+    padding-top: 45px;
+    margin-left: 8%;
   }
 
   .soft {
@@ -123,6 +120,42 @@ export const SectionContactsStyle = styled.section`
     width: 50%;
   }
 
+  .container-contact-icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    column-gap: 6%;
+    margin-bottom: 3%;
+    align-items: center;
+  }
+
+  span {
+    display: flex;
+  }
+
+  .github-icon {
+    width: 44px;
+  }
+
+  .github-icon2 {
+    width: 147px;
+  }
+
+  .linkedin-icon {
+    width: 206px;
+  }
+
+  .linkedin-icon2 {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .gmail-icon {
+    width: 64px;
+  }
+  
+
   .form {
     column-gap: 60px;
     display: flex;
@@ -139,7 +172,7 @@ export const SectionContactsStyle = styled.section`
     font-family: sans-serif;
     font-size: 16px;
     border-radius: 3px;
-    color: var(--antiwhite);
+    color: ${(props) => props.theme.title80};  
     padding: 5px 10px;
   }
 
@@ -153,7 +186,7 @@ export const SectionContactsStyle = styled.section`
     resize: none;
     border: 1px solid ${(props) => props.theme.border};
     border-radius: 3px;
-    color: var(--antiwhite);
+    color: ${(props) => props.theme.title80};
     padding: 5px 10px;
   }
 
@@ -180,6 +213,30 @@ export const SectionContactsStyle = styled.section`
     div {
       width: 100%;
     }
+
+  .github-icon {
+    width: 52px;
+  }
+
+  .github-icon2 {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .linkedin-icon {
+    visibility: hidden;
+    width: 0;
+  }
+
+  .linkedin-icon2 {
+    visibility: visible;
+    width: 48px;
+  }
+
+  .gmail-icon {
+    width: 60px;
+  }
+  
 
     .button-form {
       column-gap: 8%;

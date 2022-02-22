@@ -4,6 +4,7 @@ import { ButtonSubmitContact, SectionContactsStyle } from './style';
 import { dark, light } from '../../style/theme/theme';
 import PortfolioContext from '../../context/PortfolioContext';
 import languageData from '../../support/languageData';
+import contactData from '../../support/contactData';
 
 export default function SectionContact() {
   const { language, theme } = useContext(PortfolioContext);
@@ -15,6 +16,31 @@ export default function SectionContact() {
             ? languageData.titleNav4.pt
             : languageData.titleNav4.en}
         </h3>
+        <div className="container-contact-icon">
+          {contactData.map((contact) => (
+            <a
+              href={contact.end}
+              key={contact.class}
+              target="_blank"
+              rel="noreferrer noopener"
+            >
+              <span>
+                <img
+                  src={contact.img}
+                  alt={contact.img}
+                  className={contact.class}
+                />
+                {contact.img2 && (
+                  <img
+                    src={contact.img2}
+                    alt={contact.img2}
+                    className={contact.class2}
+                  />
+                )}
+              </span>
+            </a>
+          ))}
+        </div>
         <form>
           <div className="form">
             <div>
