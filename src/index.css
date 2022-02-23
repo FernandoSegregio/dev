@@ -8,6 +8,13 @@
     height: 0;
   }
 
+  .c-PJLV > svg{
+    width: 26px;
+    height: 29px;
+    color: #302d2de8;
+    margin: 15px 10px;
+  }
+
   .carousel{
     overflow-x: scroll;
     overflow-y: hidden;

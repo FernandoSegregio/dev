@@ -97,7 +97,7 @@ export const MainStyled = styled.main`
     }
 
     h3 {
-      font-size: 20px;
+      font-size: 18px;
       width: 300px;
     }
 

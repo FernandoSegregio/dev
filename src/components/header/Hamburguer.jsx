@@ -1,7 +1,7 @@
 import React, { useContext } from 'react';
 import { Link } from 'react-scroll';
 import { styled, keyframes } from '@stitches/react';
-import { violet, mauve, blackA } from '@radix-ui/colors';
+import { violet, mauve } from '@radix-ui/colors';
 import { HamburgerMenuIcon } from '@radix-ui/react-icons';
 import * as DropdownMenuPrimitive from '@radix-ui/react-dropdown-menu';
 import PortfolioContext from '../../context/PortfolioContext';
@@ -83,20 +83,20 @@ export const DropdownMenuItem = StyledItem;
 // Your app...
 const Box = styled('div', {});
 
-const IconButton = styled('button', {
-  all: 'unset',
-  fontFamily: 'inherit',
-  borderRadius: '100%',
-  height: 30,
-  width: 30,
-  display: 'inline-flex',
-  alignItems: 'center',
-  justifyContent: 'center',
-  color: '#8c8787e8',
-  // backgroundColor: `${(props) => props.theme.background}`,
-  boxShadow: `0 2px 10px ${blackA.blackA7}`,
-  '&:hover': { backgroundColor: violet.violet3 },
-});
+// const IconButton = styled('button', {
+// all: 'unset',
+// fontFamily: 'inherit',
+// borderRadius: '100%',
+// height: 30,
+// width: 30,
+// // display: 'inline-flex',
+// // alignItems: 'center',
+// // justifyContent: 'center',
+// // color: '#8c8787e8',
+// // // backgroundColor: `${(props) => props.theme.background}`,
+// // boxShadow: `0 2px 10px ${blackA.blackA7}`,
+// '&:hover': { backgroundColor: violet.violet3 },
+// });
 
 function DropdownMenuHamb() {
   const { language } = useContext(PortfolioContext);
@@ -104,9 +104,7 @@ function DropdownMenuHamb() {
     <Box className="menu">
       <DropdownMenu className="hamburguer">
         <DropdownMenuTrigger asChild>
-          <IconButton aria-label="Customise options">
-            <HamburgerMenuIcon />
-          </IconButton>
+          <HamburgerMenuIcon />
         </DropdownMenuTrigger>
 
         <DropdownMenuContent sideOffset={5}>
