@@ -1,6 +1,6 @@
 import styled, { keyframes } from 'styled-components';
 
-const changeTitleColor1 = keyframes`
+const changeTitleColor2 = keyframes`
   0% {
     background-image: linear-gradient(to right, #007cf0, #00dfd8);
     color: black;
@@ -10,11 +10,15 @@ const changeTitleColor1 = keyframes`
     -webkit-text-fill-color: transparent;
   }
   70% {
+    
     color: ${(props) => props.theme.title70};
+
   }
 
   80% {
+
     color: ${(props) => props.theme.title80};
+
   }
 
   100% {
@@ -22,9 +26,10 @@ const changeTitleColor1 = keyframes`
   }
 `;
 
-const changeTitleColor2 = keyframes`
+const changeTitleColor1 = keyframes`
 0% {
   color: ${(props) => props.theme.title100};
+  
 }
 20% {
   color: ${(props) => props.theme.title80};
