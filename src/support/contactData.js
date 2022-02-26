@@ -3,6 +3,7 @@ import githubIcon2 from '../images/icon_contact/github-icon2.svg';
 import linkedinIcon from '../images/icon_contact/linkedin-icon.svg';
 import linkedinIcon2 from '../images/icon_contact/linkedin-icon2.svg';
 import gmailIcon from '../images/icon_contact/gmail-icon.svg';
+import gmailIcon2 from '../images/icon_contact/gmail-icon2.svg';
 
 const contactIcon = [
   {
@@ -25,7 +26,9 @@ const contactIcon = [
     id: 3,
     end: 'mailto:segregio@gmail.com',
     class: 'gmail-icon',
-    img: gmailIcon,
+    class2: 'gmail-icon2',
+    img: gmailIcon2,
+    img2: gmailIcon,
   },
 ];
 

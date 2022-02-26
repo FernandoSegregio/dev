@@ -132,6 +132,7 @@ export const SectionContactsStyle = styled.section`
 
   span {
     display: flex;
+    column-gap: 17%;
   }
 
   .github-icon {
@@ -152,9 +153,14 @@ export const SectionContactsStyle = styled.section`
   }
 
   .gmail-icon {
-    width: 64px;
+    width: 300px;
+    visibility: visible;
   }
   
+  .gmail-icon2 {
+    width: 0;
+    visibility: hidden;
+  }
 
   .form {
     column-gap: 60px;
@@ -214,6 +220,10 @@ export const SectionContactsStyle = styled.section`
       width: 100%;
     }
 
+    span {
+      column-gap: 0;
+    }
+
   .github-icon {
     width: 52px;
   }
@@ -234,9 +244,14 @@ export const SectionContactsStyle = styled.section`
   }
 
   .gmail-icon {
-    width: 60px;
+    width: 0;
+    visibility: hidden;
   }
   
+  .gmail-icon2 {
+    width: 60px;
+    visibility: visible;
+  }
 
     .button-form {
       column-gap: 8%;
