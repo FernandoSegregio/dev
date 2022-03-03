@@ -8,6 +8,7 @@ export const light = {
   textButton: '#504c4ce8',
   backForms: '#fafafa',
   border: '#504c4ce8',
+  link: '#007cf0',
 };
 
 export const dark = {
@@ -21,4 +22,5 @@ export const dark = {
   textButton: '#faebd7',
   backForms: '#504c4ce8',
   border: '#000000',
+  link: '#007cf0',
 };

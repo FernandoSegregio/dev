@@ -20,31 +20,40 @@
     overflow-y: hidden;
     white-space: nowrap;
     width: 100%;
+    padding-top: 20px;
   }
 
   .card {
-    box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 14px 1px rgb(0 0 0 / 50%);
     display: inline-block;
-    height: 410px;
+    height: 550px;
     margin-bottom: 10px;
     margin-left: 22px;
-    padding: 30px;
-    width: 50%;
+    padding: 42px;
+    width: 31%;
     white-space: normal;
     text-align: center;
   }
 
   .card > img {
-    height: 250px;
+    height: 270px;
     background: transparent;
   }
 
-  .card > p {
+  .desc-prj {
     text-align: justify;
   }
 
   .card > h4 {
     padding: 2% 0;
+  }
+
+  .card > div {
+    row-gap: 5%;
+  }
+
+  .link-rep {
+    padding: 4% 2%;
   }
 
   @media (max-width: 800px) {

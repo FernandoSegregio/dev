@@ -286,6 +286,25 @@ export const SectionProjectsStyle = styled.section`
   width: 100%;
   padding: 40px 85px;
 
+  .card > div {
+      display: flex;
+      flex-direction: column;
+      padding-top: 15px;
+    }
+
+  p {
+    height: 120px;
+  }
+
+  a {
+    text-decoration: none;
+    padding: 1px;
+  }
+
+  a:visited {
+    color: ${(props) => props.theme.link};
+  }
+
   h3 {
     font-size: 40px;
     font-family: sen;
@@ -297,6 +316,11 @@ export const SectionProjectsStyle = styled.section`
 
     h3 {
       font-size: 30px;
+    }
+
+    p {
+      font-size: 14px;
+      margin: 7px 0px;
     }
   }
 `;
