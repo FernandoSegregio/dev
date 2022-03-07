@@ -130,8 +130,8 @@ export const SectionContactsStyle = styled.section`
     justify-content: center;
     width: 100%;
     column-gap: 6%;
-    margin: -60px;
     align-items: center;
+    margin: -60px 0;
   }
 
   span {
