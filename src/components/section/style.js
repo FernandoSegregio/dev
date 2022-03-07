@@ -293,11 +293,13 @@ export const SectionProjectsStyle = styled.section`
     }
 
   p {
-    height: 120px;
+    font-size: 15px;
+    height: 92px;
   }
 
   a {
     text-decoration: none;
+    font-size: 15px;
     padding: 1px;
   }
 
@@ -322,5 +324,10 @@ export const SectionProjectsStyle = styled.section`
       font-size: 14px;
       margin: 7px 0px;
     }
+
+    .card > div {
+      padding-top: 7px;
+    }
+
   }
 `;

@@ -26,10 +26,10 @@
   .card {
     box-shadow: 0px 0px 14px 1px rgb(0 0 0 / 50%);
     display: inline-block;
-    height: 550px;
+    height: 560px;
     margin-bottom: 10px;
     margin-left: 22px;
-    padding: 42px;
+    padding: 20px;
     width: 31%;
     white-space: normal;
     text-align: center;
@@ -48,12 +48,34 @@
     padding: 2% 0;
   }
 
+  .version {
+   margin-left: 20px;
+   font-size: 20px;
+  }
+
   .card > div {
     row-gap: 5%;
   }
 
   .link-rep {
     padding: 4% 2%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+    padding-bottom: 7px;
+  }
+
+  .skills > img {
+    width: 30px;
+  }
+
+  .title-skills  {
+    height: 20px !important;
+    text-align: initial;
+    margin: 6px 0;
   }
 
   @media (max-width: 800px) {

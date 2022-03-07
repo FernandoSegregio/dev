@@ -19,10 +19,24 @@ export default function SectionProjects() {
         <div className="carousel">
           {projects.map((project) => (
             <div key={project.id} className="card">
-              <h4>{project.name}</h4>
+              <h4>
+                {project.name}
+                <span className="version">
+                  {project.mobile}
+                  {project.desktop}
+                </span>
+              </h4>
               <img src={project.img} alt={project.name} />
               <div>
                 <p className="desc-prj">{project.desc}</p>
+                <p className="title-skills">{project.skills}</p>
+                <div className="skills">
+                  { project.skills1 && <img src={project.skills1} alt="" />}
+                  { project.skills2 && <img src={project.skills2} alt="" />}
+                  { project.skills3 && <img src={project.skills3} alt="" />}
+                  { project.skills4 && <img src={project.skills4} alt="" />}
+                  { project.skills5 && <img src={project.skills5} alt="" />}
+                </div>
                 <a className="link-rep" href={project.repo}>{project.linkRep}</a>
                 <a className="link-rep" href={project.link}>{project.name}</a>
               </div>
