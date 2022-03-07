@@ -136,11 +136,12 @@ export const SectionContactsStyle = styled.section`
 
   span {
     display: flex;
-    column-gap: 17%;
+    column-gap: 10%;
   }
 
   .github-icon {
-    width: 44px;
+    width: 50px;
+    filter: invert(1);
   }
 
   .github-icon2 {
