@@ -36,18 +36,18 @@ export default function Header() {
                   : languageData.titleNav1.en}
               </li>
             </Link>
+            <Link to="skills-title" spy smooth offset={-50} duration={1000}>
+              <li>
+                {language === 'pt-BR'
+                  ? languageData.titleNav3.pt
+                  : languageData.titleNav3.en}
+              </li>
+            </Link>
             <Link to="projects" spy smooth offset={-50} duration={1000}>
               <li>
                 {language === 'pt-BR'
                   ? languageData.titleNav2.pt
                   : languageData.titleNav2.en}
-              </li>
-            </Link>
-            <Link to="skills" spy smooth offset={-50} duration={1000}>
-              <li>
-                {language === 'pt-BR'
-                  ? languageData.titleNav3.pt
-                  : languageData.titleNav3.en}
               </li>
             </Link>
             <Link to="contact" spy smooth offset={-50} duration={1000}>

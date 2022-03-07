@@ -24,7 +24,7 @@ export default function SectionSkills() {
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <SectionSkillsStyle>
-        <h3 className="skills">
+        <h3 className="skills-title">
           {language === 'pt-BR'
             ? languageData.titleNav3.pt
             : languageData.titleNav3.en}

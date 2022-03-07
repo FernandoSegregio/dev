@@ -120,13 +120,17 @@ export const SectionContactsStyle = styled.section`
     width: 50%;
   }
 
+  .contact {
+    padding-bottom: 0;
+  }
+
   .container-contact-icon {
     display: flex;
     flex-direction: row;
     justify-content: center;
     width: 100%;
     column-gap: 6%;
-    margin-bottom: 3%;
+    margin: -60px;
     align-items: center;
   }
 
@@ -256,6 +260,16 @@ export const SectionContactsStyle = styled.section`
     .button-form {
       column-gap: 8%;
     }
+
+    .contact {
+    padding-bottom: 7%;
+  }
+
+  .container-contact-icon {
+    margin: 0px;
+  }
+
+
   }
 `;
 
