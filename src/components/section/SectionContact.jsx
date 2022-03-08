@@ -1,5 +1,6 @@
-import React, { useContext } from 'react';
+import React, { useContext, useRef } from 'react';
 import { ThemeProvider } from 'styled-components';
+import emailjs from '@emailjs/browser';
 import { ButtonSubmitContact, SectionContactsStyle } from './style';
 import { dark, light } from '../../style/theme/theme';
 import PortfolioContext from '../../context/PortfolioContext';
@@ -8,6 +9,31 @@ import contactData from '../../support/contactData';
 
 export default function SectionContact() {
   const { language, theme } = useContext(PortfolioContext);
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    const {
+      VITE_YOUR_SERVICE_ID,
+      VITE_YOUR_TEMPLATE_ID,
+      VITE_YOUR_USER_ID,
+    } = import.meta.env;
+
+    emailjs
+      .sendForm(
+        VITE_YOUR_SERVICE_ID,
+        VITE_YOUR_TEMPLATE_ID,
+        form.current,
+        VITE_YOUR_USER_ID,
+      )
+      .then((result) => {
+        console.log(result.text);
+      }, (error) => {
+        console.log(error.text);
+      });
+  };
+
   return (
     <ThemeProvider theme={theme === 'dark' ? dark : light}>
       <SectionContactsStyle>
@@ -41,7 +67,7 @@ export default function SectionContact() {
             </a>
           ))}
         </div>
-        <form>
+        <form ref={form} onSubmit={sendEmail}>
           <div className="form">
             <div>
               <label htmlFor="name">
@@ -51,6 +77,7 @@ export default function SectionContact() {
                 <input
                   type="text"
                   id="name"
+                  name="user_name"
                   placeholder={
                     language === 'pt-BR'
                       ? languageData.textInputName.pt
@@ -61,6 +88,7 @@ export default function SectionContact() {
               <label htmlFor="email">
                 Email:
                 <input
+                  name="user_email"
                   type="email"
                   id="email"
                   placeholder={
@@ -75,6 +103,7 @@ export default function SectionContact() {
                   ? languageData.textLabelSubject.pt
                   : languageData.textLabelSubject.en}
                 <input
+                  name="message"
                   type="text"
                   id="subject"
                   placeholder={
@@ -91,6 +120,7 @@ export default function SectionContact() {
                   ? languageData.textLabelMsg.pt
                   : languageData.textLabelMsg.en}
                 <textarea
+                  name="message"
                   id="text-contact"
                   rows={9}
                   spellheck="true"
@@ -109,7 +139,7 @@ export default function SectionContact() {
                 ? languageData.textButtonClear.pt
                 : languageData.textButtonClear.en}
             </ButtonSubmitContact>
-            <ButtonSubmitContact type="submit">
+            <ButtonSubmitContact type="submit" value="Send">
               {language === 'pt-BR'
                 ? languageData.textButtonEnv.pt
                 : languageData.textButtonEnv.en}
