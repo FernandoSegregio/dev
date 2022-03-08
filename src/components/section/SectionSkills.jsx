@@ -14,6 +14,8 @@ import bootstrapIcon from '../../images/icons_skills/bootstrap_icon.svg';
 import jestIcon from '../../images/icons_skills/jest_icon.svg';
 import mySQLIcon from '../../images/icons_skills/mySQL_icon.svg';
 import nodeIcon from '../../images/icons_skills/node_icon.svg';
+import scrumIcon from '../../images/icons_skills/scrum_icon.svg';
+import kanbanIcon from '../../images/icons_skills/kanban_icon.svg';
 import communicationIcon from '../../images/icons_skills/communication_icon.svg';
 import empathyIcon from '../../images/icons_skills/empathy_icon.svg';
 import teamWorkIcon from '../../images/icons_skills/team_work_icon.svg';
@@ -55,12 +57,12 @@ export default function SectionSkills() {
             <img src={jestIcon} alt="Jest" />
             Jest
           </p>
-        </div>
-        <div>
           <p>
             <img src={styledIcon} alt="Styled Components" />
             Styled Components
           </p>
+        </div>
+        <div>
           <p>
             <img src={bootstrapIcon} alt="Bootstrap" />
             Bootstrap
@@ -76,6 +78,14 @@ export default function SectionSkills() {
           <p>
             <img src={gitIcon} alt="Git" />
             Git
+          </p>
+          <p>
+            <img src={scrumIcon} alt="Scrum" />
+            Scrum
+          </p>
+          <p>
+            <img src={kanbanIcon} alt="Kanban" />
+            Kanban
           </p>
         </div>
         <h5 className="soft">
