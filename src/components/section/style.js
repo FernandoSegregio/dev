@@ -316,6 +316,7 @@ export const SectionProjectsStyle = styled.section`
     text-decoration: none;
     font-size: 15px;
     padding: 1px;
+    color: ${(props) => props.theme.link};
   }
 
   a:visited {
