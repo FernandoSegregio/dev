@@ -79,6 +79,9 @@ export const SectionSkillsStyle = styled.section`
       justify-content: center;
       padding-top: 10px;
       flex-wrap: wrap;
+      width: 330px;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     img {
