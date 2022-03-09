@@ -8,7 +8,6 @@ export const HeaderStyle = styled.header`
   color: ${(props) => props.theme.text};
   font-size: 20px;
   padding-top: 20px;
-  width: 100vw;
   
   ul {
   display: flex;
