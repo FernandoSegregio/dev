@@ -1,4 +1,6 @@
-import React, { useContext, useRef } from 'react';
+import React, {
+  useContext, useRef, useState, useEffect,
+} from 'react';
 import { ThemeProvider } from 'styled-components';
 import emailjs from '@emailjs/browser';
 import { ButtonSubmitContact, SectionContactsStyle } from './style';
@@ -10,6 +12,41 @@ import contactData from '../../support/contactData';
 export default function SectionContact() {
   const { language, theme } = useContext(PortfolioContext);
   const form = useRef();
+  const REGEX_EMAIL = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+
+  const [name, setName] = useState('');
+  const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
+  const [message, setMessage] = useState('');
+  const [disabled, setDisabled] = useState(true);
+  const [disabledReset, setDisabledReset] = useState(true);
+
+  function verifyInputs() {
+    if (!name || !email || !subject || !message) return true;
+    if (name.length < 3) return true;
+    if (!REGEX_EMAIL.test(email)) return true;
+    if (subject.length < 5) return true;
+    if (message.length < 5) return true;
+
+    return false;
+  }
+
+  function verifyInputsValue() {
+    if (name || email || subject || message) return false;
+    return true;
+  }
+
+  useEffect(() => {
+    setDisabled(verifyInputs());
+    setDisabledReset(verifyInputsValue());
+  }, [name, email, subject, message]);
+
+  function resetForm() {
+    setName('');
+    setEmail('');
+    setSubject('');
+    setMessage('');
+  }
 
   const sendEmail = (e) => {
     e.preventDefault();
@@ -29,9 +66,11 @@ export default function SectionContact() {
       )
       .then((result) => {
         console.log(result.text);
+        alert('Email enviado com sucesso');
       }, (error) => {
         console.log(error.text);
       });
+    resetForm();
   };
 
   return (
@@ -75,9 +114,11 @@ export default function SectionContact() {
                   ? languageData.textLabelName.pt
                   : languageData.textLabelName.en}
                 <input
+                  value={name}
+                  onChange={({ target }) => setName(target.value)}
                   type="text"
                   id="name"
-                  name="user_name"
+                  name="userName"
                   placeholder={
                     language === 'pt-BR'
                       ? languageData.textInputName.pt
@@ -88,7 +129,9 @@ export default function SectionContact() {
               <label htmlFor="email">
                 Email:
                 <input
-                  name="user_email"
+                  value={email}
+                  onChange={({ target }) => setEmail(target.value)}
+                  name="from_name"
                   type="email"
                   id="email"
                   placeholder={
@@ -103,6 +146,8 @@ export default function SectionContact() {
                   ? languageData.textLabelSubject.pt
                   : languageData.textLabelSubject.en}
                 <input
+                  value={subject}
+                  onChange={({ target }) => setSubject(target.value)}
                   name="message"
                   type="text"
                   id="subject"
@@ -120,6 +165,8 @@ export default function SectionContact() {
                   ? languageData.textLabelMsg.pt
                   : languageData.textLabelMsg.en}
                 <textarea
+                  value={message}
+                  onChange={({ target }) => setMessage(target.value)}
                   name="message"
                   id="text-contact"
                   rows={9}
@@ -134,12 +181,16 @@ export default function SectionContact() {
             </div>
           </div>
           <div className="button-form">
-            <ButtonSubmitContact type="reset">
+            <ButtonSubmitContact
+              type="reset"
+              onClick={() => resetForm()}
+              disabled={disabledReset}
+            >
               {language === 'pt-BR'
                 ? languageData.textButtonClear.pt
                 : languageData.textButtonClear.en}
             </ButtonSubmitContact>
-            <ButtonSubmitContact type="submit" value="Send">
+            <ButtonSubmitContact type="submit" value="Send" disabled={disabled}>
               {language === 'pt-BR'
                 ? languageData.textButtonEnv.pt
                 : languageData.textButtonEnv.en}

@@ -78,6 +78,12 @@
     margin: 6px 0;
   }
 
+  button:disabled {
+    background-color: transparent;
+    color: rgb(97, 97, 97);
+    cursor: not-allowed;
+  }
+
   @media (max-width: 800px) {
     .c-PJLV {
         visibility: visible;
