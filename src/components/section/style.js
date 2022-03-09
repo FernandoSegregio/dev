@@ -33,7 +33,8 @@ export const SectionSkillsStyle = styled.section`
   div {
     display: flex;
     justify-content: center;
-    column-gap: 2%;
+    column-gap: 4%;
+    flex-wrap: wrap;
   }
 
   h3 {
@@ -62,11 +63,11 @@ export const SectionSkillsStyle = styled.section`
   }
 
   .soft {
-    column-gap: 2%;
+    column-gap: 4%;
   }
 
   @media (max-width: 800px) {
-    padding: 36px 40px;
+    padding: 36px 18px;
 
     h3 {
       font-size: 30px;
@@ -74,11 +75,11 @@ export const SectionSkillsStyle = styled.section`
     }
 
     div {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
+      display: flex;
+      justify-content: center;
+      padding-top: 10px;
+      flex-wrap: wrap;
     }
-
 
     img {
       width: 45px;
@@ -89,10 +90,14 @@ export const SectionSkillsStyle = styled.section`
     p {
       font-size: 12px;
       text-align: center;
+      width: 66px;
     }
 
     h5 {
       font-size: 15px;
+    }
+    .styled-components {
+      width: 67px;
     }
   }
 `;
@@ -141,15 +146,17 @@ export const SectionContactsStyle = styled.section`
 
   .github-icon {
     width: 50px;
-    filter: invert(1);
+    filter: ${(props) => props.theme.svg};
   }
 
   .github-icon2 {
     width: 147px;
+    filter: ${(props) => props.theme.svg};
   }
 
   .linkedin-icon {
     width: 206px;
+    filter: ${(props) => props.theme.svgLink};
   }
 
   .linkedin-icon2 {
@@ -161,7 +168,7 @@ export const SectionContactsStyle = styled.section`
     width: 300px;
     visibility: visible;
   }
-  
+
   .gmail-icon2 {
     width: 0;
     visibility: hidden;
@@ -183,7 +190,7 @@ export const SectionContactsStyle = styled.section`
     font-family: sans-serif;
     font-size: 16px;
     border-radius: 3px;
-    color: ${(props) => props.theme.title80};  
+    color: ${(props) => props.theme.title80};
     padding: 5px 10px;
   }
 
@@ -229,48 +236,46 @@ export const SectionContactsStyle = styled.section`
       column-gap: 0;
     }
 
-  .github-icon {
-    width: 52px;
-  }
+    .github-icon {
+      width: 52px;
+    }
 
-  .github-icon2 {
-    visibility: hidden;
-    width: 0;
-  }
+    .github-icon2 {
+      visibility: hidden;
+      width: 0;
+    }
 
-  .linkedin-icon {
-    visibility: hidden;
-    width: 0;
-  }
+    .linkedin-icon {
+      visibility: hidden;
+      width: 0;
+    }
 
-  .linkedin-icon2 {
-    visibility: visible;
-    width: 48px;
-  }
+    .linkedin-icon2 {
+      visibility: visible;
+      width: 48px;
+    }
 
-  .gmail-icon {
-    width: 0;
-    visibility: hidden;
-  }
-  
-  .gmail-icon2 {
-    width: 60px;
-    visibility: visible;
-  }
+    .gmail-icon {
+      width: 0;
+      visibility: hidden;
+    }
+
+    .gmail-icon2 {
+      width: 60px;
+      visibility: visible;
+    }
 
     .button-form {
       column-gap: 8%;
     }
 
     .contact {
-    padding-bottom: 7%;
-  }
+      padding-bottom: 7%;
+    }
 
-  .container-contact-icon {
-    margin: 0px;
-  }
-
-
+    .container-contact-icon {
+      margin: 0px;
+    }
   }
 `;
 
@@ -302,10 +307,10 @@ export const SectionProjectsStyle = styled.section`
   padding: 40px 85px;
 
   .card > div {
-      display: flex;
-      flex-direction: column;
-      padding-top: 15px;
-    }
+    display: flex;
+    flex-direction: column;
+    padding-top: 15px;
+  }
 
   p {
     font-size: 15px;
@@ -344,6 +349,5 @@ export const SectionProjectsStyle = styled.section`
     .card > div {
       padding-top: 7px;
     }
-
   }
 `;

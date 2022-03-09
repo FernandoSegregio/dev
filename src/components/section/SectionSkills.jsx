@@ -57,12 +57,10 @@ export default function SectionSkills() {
             <img src={jestIcon} alt="Jest" />
             Jest
           </p>
-          <p>
+          <p className="styled-components">
             <img src={styledIcon} alt="Styled Components" />
             Styled Components
           </p>
-        </div>
-        <div>
           <p>
             <img src={bootstrapIcon} alt="Bootstrap" />
             Bootstrap
