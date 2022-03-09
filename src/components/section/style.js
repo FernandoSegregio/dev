@@ -153,12 +153,12 @@ export const SectionContactsStyle = styled.section`
   }
 
   .github-icon2 {
-    width: 147px;
+    width: 125px;
     filter: ${(props) => props.theme.svg};
   }
 
   .linkedin-icon {
-    width: 206px;
+    width: 180px;
     filter: ${(props) => props.theme.svgLink};
   }
 
@@ -168,8 +168,9 @@ export const SectionContactsStyle = styled.section`
   }
 
   .gmail-icon {
-    width: 300px;
+    width: 240px;
     visibility: visible;
+    margin-left: -14%;
   }
 
   .gmail-icon2 {
