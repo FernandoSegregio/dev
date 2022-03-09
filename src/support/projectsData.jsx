@@ -41,7 +41,7 @@ export const projectsEng = [
   {
     id: 2,
     name: 'Pace Fácil',
-    desc: 'Combining 2 passions, running and programming, I created this app to help runners calculate their pace, running time, and average speed.',
+    desc: 'Combining 2 passions, running and programming, I created this app to help runners calculate their pace, average speed and total time.',
     tech: 'React, JavaScript, Styled Components, Logíca de Programação',
     img: PACE,
     link: 'https://pace-facil.vercel.app',
@@ -113,8 +113,8 @@ export const projects = [
   {
     id: 2,
     name: 'Pace Fácil',
-    desc: `Aplicação feita exclusivamente mobile.
-    Juntando 2 paixões, corrida e programação, criei este aplicativo para ajudar corredores a calcular o seu pace.`,
+    desc: `Aplicação feita para facilitar a vida de corredores.
+    Juntando 2 paixões, corrida e programação, criei este aplicativo para ajudar corredores a calcular o seu pace, velocidade média e tempo total.`,
     tech: 'React, JavaScript, Styled Components, Logíca de Programação',
     img: PACE,
     link: 'https://pace-facil.vercel.app',
