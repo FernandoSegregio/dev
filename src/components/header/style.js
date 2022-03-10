@@ -39,6 +39,8 @@ export const HeaderStyle = styled.header`
     color: ${(props) => props.theme.text};
     font-size: 20px;
     width: 10%;
+    cursor: pointer;
+    
   }
   .logo {
     color: black;
