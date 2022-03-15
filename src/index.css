@@ -24,9 +24,9 @@
   }
 
   .card {
-    box-shadow: 0px 0px 14px 1px rgb(0 0 0 / 50%);
+    box-shadow: 0 0 10px 1px rgb(0 0 0 / 10%);
     display: inline-block;
-    height: 560px;
+    height: 610px;
     margin-bottom: 10px;
     margin-left: 22px;
     padding: 20px;

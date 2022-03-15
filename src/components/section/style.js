@@ -318,7 +318,7 @@ export const SectionProjectsStyle = styled.section`
 
   p {
     font-size: 15px;
-    height: 92px;
+    height: 120px;
   }
 
   a {
