@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export const SectionAboutStyle = styled.section`
   text-align: justify;
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   font-size: 20px;
   width: 100%;
@@ -25,7 +24,6 @@ export const SectionAboutStyle = styled.section`
 `;
 
 export const SectionSkillsStyle = styled.section`
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   width: 100%;
   padding: 80px 85px;
@@ -33,7 +31,7 @@ export const SectionSkillsStyle = styled.section`
   div {
     display: flex;
     justify-content: center;
-    column-gap: 4%;
+    column-gap: 5%;
     flex-wrap: wrap;
   }
 
@@ -63,7 +61,7 @@ export const SectionSkillsStyle = styled.section`
   }
 
   .soft {
-    column-gap: 4%;
+    column-gap: 5%;
   }
 
   @media (max-width: 800px) {
@@ -106,7 +104,6 @@ export const SectionSkillsStyle = styled.section`
 `;
 
 export const SectionContactsStyle = styled.section`
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   width: 100%;
   padding: 40px 85px;
@@ -305,7 +302,6 @@ export const ButtonSubmitContact = styled.button`
 `;
 
 export const SectionProjectsStyle = styled.section`
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   width: 100%;
   padding: 40px 85px;
@@ -317,8 +313,8 @@ export const SectionProjectsStyle = styled.section`
   }
 
   p {
-    font-size: 15px;
-    height: 120px;
+    font-size: 14px;
+    height: 130px;
   }
 
   a {
