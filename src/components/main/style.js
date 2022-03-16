@@ -50,7 +50,6 @@ const changeTitleColor1 = keyframes`
 `;
 
 export const MainStyled = styled.main`
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   display: flex;
   height: 100vh;

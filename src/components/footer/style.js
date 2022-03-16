@@ -3,7 +3,6 @@ import styled from 'styled-components';
 const FooterStyle = styled.footer`
   display: flex;
   justify-content: center;
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   font-size: 12px;
   width: 100%;
