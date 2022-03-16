@@ -4,7 +4,6 @@ export const HeaderStyle = styled.header`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: ${(props) => props.theme.background};
   color: ${(props) => props.theme.text};
   font-size: 20px;
   padding-top: 20px;
@@ -82,5 +81,5 @@ export const FlagStyle = styled.div`
   display: flex;
   width: 20%;
   justify-content: center;
-  column-gap: 5%;
+  column-gap: 8%;
 `;
