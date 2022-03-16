@@ -2,10 +2,13 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import PortfolioProvider from './context/PortfolioProvider';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <PortfolioProvider>
+      <App />
+    </PortfolioProvider>
   </React.StrictMode>,
   document.getElementById('root'),
 );

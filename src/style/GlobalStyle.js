@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 
-export default createGlobalStyle`
+const GlobalStyles = createGlobalStyle`
 
 :root{
     --antiwhite: #faebd7;
@@ -21,5 +21,11 @@ export default createGlobalStyle`
   body {
     margin: 0;
     font-family: inter, -apple-system, 'Roboto', 'Ubuntu', sans-serif;
+    background-color: ${(props) => props.theme.background};;
+    width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
+
+export default GlobalStyles;

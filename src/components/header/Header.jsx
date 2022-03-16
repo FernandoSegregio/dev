@@ -1,5 +1,4 @@
 import React, { useContext } from 'react';
-import { ThemeProvider } from 'styled-components';
 import { IoMdMoon as Moon } from 'react-icons/io';
 import { FiSun as Sun } from 'react-icons/fi';
 import { Link } from 'react-scroll';
@@ -8,7 +7,6 @@ import EUA from '../../images/EUA-circle.svg';
 import PortfolioContext from '../../context/PortfolioContext';
 import { HeaderStyle, FlagStyle } from './style';
 import languageData from '../../support/languageData';
-import { dark, light } from '../../style/theme/theme';
 import DropdownMenuHamb from './Hamburguer';
 
 const titleHeader = '< NandoDev />';
@@ -23,7 +21,7 @@ export default function Header() {
   }
 
   return (
-    <ThemeProvider theme={theme === 'dark' ? dark : light}>
+    <>
       {DropdownMenuHamb()}
       <HeaderStyle>
         <nav className="nav">
@@ -95,6 +93,6 @@ export default function Header() {
           />
         </FlagStyle>
       </HeaderStyle>
-    </ThemeProvider>
+    </>
   );
 }
