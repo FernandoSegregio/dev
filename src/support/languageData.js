@@ -18,7 +18,7 @@ const languageData = {
   textAbout: {
     pt: `Desenvolvedor Front-end pela @Trybe.
 
-    Amplo domínio em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente  gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.
+     Habilidades em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente  gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.
     
     Experiência com metodologias ágeis, domínio de Kanban e Scrum.
     
@@ -31,7 +31,7 @@ const languageData = {
     Família e Deus estão sempre comigo!`,
     en: `Front-end developer by @Trybe.
  
-    Broad domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.
+    Domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.
     
     Experience with agile methodologies, Kanban and Scrum domain.
     
@@ -96,8 +96,8 @@ const languageData = {
     en: 'Send',
   },
   textFooter: {
-    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito, Amor e Café (que no fim são a mesma coisa)',
-    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of, Love and Coffee (that in the end it is the same thing)',
+    pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito Amor e Café (que no fim são a mesma coisa)',
+    en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of Love and Coffee (that in the end it is the same thing)',
   },
 };
 
