@@ -26,6 +26,13 @@ const GlobalStyles = createGlobalStyle`
     margin-left: auto;
     margin-right: auto;
   }
+  @media (max-width: 800px) { 
+    body {
+      width: 100%;
+    }
+  }
+
+
 `;
 
 export default GlobalStyles;
