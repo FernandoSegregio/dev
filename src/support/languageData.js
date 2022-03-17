@@ -33,8 +33,8 @@ const languageData = {
   },
 
   about3: {
-    pt: 'Full Stack em formação, atualmente no módulo Back-end na Trybe.',
-    en: 'Full Stack in formation, currently in the Back-end module at Trybe.',
+    pt: 'Full Stack em formação, atualmente no módulo Back-end na',
+    en: 'Full Stack in formation, currently in the Back-end module at.',
   },
 
   about4: {

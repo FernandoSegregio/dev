@@ -45,6 +45,15 @@ export default function SectionAbout() {
           {language === 'pt-BR'
             ? languageData.about3.pt
             : languageData.about3.en}
+          <a href={languageData.linkTrybe}>
+            <strong>
+              {' '}
+              {language === 'pt-BR'
+                ? languageData.trybe.pt
+                : languageData.trybe.en}
+
+            </strong>
+          </a>
         </p>
         <p>
           {language === 'pt-BR'
