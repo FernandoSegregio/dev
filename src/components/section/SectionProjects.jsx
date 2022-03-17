@@ -17,7 +17,7 @@ export default function SectionProjects() {
             : languageData.titleNav2.en}
         </h3>
         <div className="carousel">
-          { language === 'pt-BR'
+          {language === 'pt-BR'
             ? projects.map((project) => (
               <div key={project.id} className="card">
                 <h4>
@@ -32,14 +32,18 @@ export default function SectionProjects() {
                   <p className="desc-prj">{project.desc}</p>
                   <p className="title-skills">{project.skills}</p>
                   <div className="skills">
-                    { project.skills1 && <img src={project.skills1} alt="" />}
-                    { project.skills2 && <img src={project.skills2} alt="" />}
-                    { project.skills3 && <img src={project.skills3} alt="" />}
-                    { project.skills4 && <img src={project.skills4} alt="" />}
-                    { project.skills5 && <img src={project.skills5} alt="" />}
+                    {project.skills1 && <img src={project.skills1} alt="" />}
+                    {project.skills2 && <img src={project.skills2} alt="" />}
+                    {project.skills3 && <img src={project.skills3} alt="" />}
+                    {project.skills4 && <img src={project.skills4} alt="" />}
+                    {project.skills5 && <img src={project.skills5} alt="" />}
                   </div>
-                  <a className="link-rep" href={project.repo}>{project.linkRep}</a>
-                  <a className="link-rep" href={project.link}>{project.name}</a>
+                  <a className="link-rep" href={project.repo}>
+                    <button type="button">{project.linkRep}</button>
+                  </a>
+                  <a className="link-rep" href={project.link}>
+                    <button type="button">{project.name}</button>
+                  </a>
                 </div>
               </div>
             ))
@@ -57,14 +61,18 @@ export default function SectionProjects() {
                   <p className="desc-prj">{project.desc}</p>
                   <p className="title-skills">{project.skills}</p>
                   <div className="skills">
-                    { project.skills1 && <img src={project.skills1} alt="" />}
-                    { project.skills2 && <img src={project.skills2} alt="" />}
-                    { project.skills3 && <img src={project.skills3} alt="" />}
-                    { project.skills4 && <img src={project.skills4} alt="" />}
-                    { project.skills5 && <img src={project.skills5} alt="" />}
+                    {project.skills1 && <img src={project.skills1} alt="" />}
+                    {project.skills2 && <img src={project.skills2} alt="" />}
+                    {project.skills3 && <img src={project.skills3} alt="" />}
+                    {project.skills4 && <img src={project.skills4} alt="" />}
+                    {project.skills5 && <img src={project.skills5} alt="" />}
                   </div>
-                  <a className="link-rep" href={project.repo}>{project.linkRep}</a>
-                  <a className="link-rep" href={project.link}>{project.name}</a>
+                  <a className="link-rep" href={project.repo}>
+                    <button type="button">{project.linkRep}</button>
+                  </a>
+                  <a className="link-rep" href={project.link}>
+                    <button type="button">{project.name}</button>
+                  </a>
                 </div>
               </div>
             ))}

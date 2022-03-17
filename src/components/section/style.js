@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 
 export const SectionAboutStyle = styled.section`
-  text-align: justify;
   color: ${(props) => props.theme.text};
   font-size: 20px;
   width: 100%;
@@ -12,6 +11,22 @@ export const SectionAboutStyle = styled.section`
     font-size: 40px;
     font-family: sen;
     padding-bottom: 30px;
+  }
+
+  div {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: ${(props) => props.theme.link};
+  }
+
+  a:visited {
+    color: ${(props) => props.theme.link};
   }
 
   @media (max-width: 800px) {
@@ -315,6 +330,15 @@ export const SectionProjectsStyle = styled.section`
   p {
     font-size: 14px;
     height: 130px;
+  }
+
+  button {
+    width: 66%;
+    height: 25px;
+    margin: 2px;
+    background-color: transparent;
+    color: ${(props) => props.theme.text};
+    border: 1px solid ${(props) => props.theme.textButton};
   }
 
   a {
