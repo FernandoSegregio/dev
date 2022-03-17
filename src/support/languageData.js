@@ -23,8 +23,8 @@ const languageData = {
   trybe: { pt: ' Trybe', en: ' Trybe.' },
   linkTrybe: 'https://betrybe.com',
   about1: {
-    pt: 'Habilidades em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente, gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.',
-    en: 'Domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component, lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.',
+    pt: 'Habilidades em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente, gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git e utilização do Bootstrap.',
+    en: 'Domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component, lifecycle state management, Jest, RTL, API consumption, git versioning tools and Bootstrap usage.',
   },
 
   about2: {
