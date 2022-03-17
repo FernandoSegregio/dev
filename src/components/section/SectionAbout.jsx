@@ -13,11 +13,50 @@ export default function SectionAbout() {
           ? languageData.titleNav1.pt
           : languageData.titleNav1.en}
       </h3>
-      <p>
-        {language === 'pt-BR'
-          ? languageData.textAbout.pt
-          : languageData.textAbout.en}
-      </p>
+      <div>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.titleAbout.pt
+            : languageData.titleAbout.en}
+          {language === 'pt-BR'
+            ? languageData.about0.pt
+            : languageData.about0.en}
+          <a href={languageData.linkTrybe}>
+            <strong>
+              {' '}
+              {language === 'pt-BR'
+                ? languageData.trybe.pt
+                : languageData.trybe.en}
+
+            </strong>
+          </a>
+        </p>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.about1.pt
+            : languageData.about1.en}
+        </p>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.about2.pt
+            : languageData.about2.en}
+        </p>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.about3.pt
+            : languageData.about3.en}
+        </p>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.about4.pt
+            : languageData.about4.en}
+        </p>
+        <p>
+          {language === 'pt-BR'
+            ? languageData.about5.pt
+            : languageData.about5.en}
+        </p>
+      </div>
     </SectionAboutStyle>
   );
 }

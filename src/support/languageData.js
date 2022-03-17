@@ -1,5 +1,5 @@
 const languageData = {
-  greetingTitle: { pt: 'Olá, eu sou', en: 'Hi, I am' },
+  greetingTitle: { pt: 'Olá! Eu sou', en: 'Hello! I am' },
   firstNameTitle: { pt: 'Fernando' },
   lastNameTitle: { pt: 'Segregio' },
   occupationTitle: {
@@ -15,34 +15,38 @@ const languageData = {
   altFlagBrazil: { pt: 'Bandeira Brasil', en: 'Flag Brazil' },
   altFlagEUA: { pt: 'Bandeira EUA', en: 'Flag EUA' },
   altPhoto: { pt: 'Foto Fernando Segregio', en: 'Photo Fernando Segregio' },
-  textAbout: {
-    pt: `Desenvolvedor Front-end pela @Trybe.
-
-     Habilidades em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente  gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.
-    
-    Experiência com metodologias ágeis, domínio de Kanban e Scrum.
-    
-    Full Stack em formação, atualmente no módulo Back-end na @Trybe.
-    
-    Experiência anterior no setor têxtil, após adquirir habilidades por todos setores do parque fabril, somando a conhecimentos em gestão e liderança passei a atuar na Coordenação de Sistemas ERP, liderar projetos de consultoria, sou apaixonado por gestão de processos, sempre executando e acreditando na melhoria continua. Planejamento, trabalho e dedicação sempre em primeiro lugar. 
-    
-    Apaixonado por esportes, triatleta amador, apreciador de novas tecnologias e inovação, sempre se atualizando e buscando novos conhecimentos. 
-    
-    Família e Deus estão sempre comigo!`,
-    en: `Front-end developer by @Trybe.
- 
-    Domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.
-    
-    Experience with agile methodologies, Kanban and Scrum domain.
-    
-    Full Stack in formation, currently in the Backend module at @Trybe.
-    
-    Previous experience in the textile sector, after acquiring skills in all sectors of the industrial park, adding to my knowledge in management and leadership, I started to work in the ERP Systems Coordination, leading consulting projects, I am passionate about process management, always executing and believing in improvement to be continued. Planning, work and dedication always come first.
-    
-    Passionate about sports, amateur triathlete, appreciator of new technologies and innovation, always updating and seeking new knowledge.
-    
-    Family and God are always with me!`,
+  titleAbout: {
+    pt: 'Desenvolvedor Front-end pela ',
+    en: 'Front-end developer by ',
   },
+  about0: { pt: 'Escola de Tecnologia', en: 'Technology School ' },
+  trybe: { pt: ' Trybe', en: ' Trybe.' },
+  linkTrybe: 'https://betrybe.com',
+  about1: {
+    pt: 'Habilidades em Lógica de Programação, HTML, Javascript, React, Redux, Hooks, Context API, ciclo de vida do componente, gerenciamento de estado, Jest, RTL, consumo de API, ferramentas de versionamento git, e utilização do Bootstrap.',
+    en: 'Domain in Programming Logic, HTML, Javascript, React, Redux, Hooks, Context API, component, lifecycle state management, Jest, RTL, API consumption, git versioning tools, and Bootstrap usage.',
+  },
+
+  about2: {
+    pt: 'Conhecimento em metodologias ágeis, domínio de Kanban e Scrum.',
+    en: 'Knowledge of agile methodologies, Kanban and Scrum domain.',
+  },
+
+  about3: {
+    pt: 'Full Stack em formação, atualmente no módulo Back-end na Trybe.',
+    en: 'Full Stack in formation, currently in the Back-end module at Trybe.',
+  },
+
+  about4: {
+    pt: 'Experiência anterior por mais de 10 anos no setor têxtil, Coordenador de Operações e Coordenador de Sistemas ERP, liderei projetos de consultoria, sou apaixonado por gestão de processos, sempre executando e acreditando na melhoria continua. Planejamento, trabalho e dedicação sempre em primeiro lugar.',
+    en: 'Previous experience for more than 10 years in the textile sector, Operations Coordinator and ERP Systems Coordinator, I led consulting projects, I am passionate about process management, always executing and believing in continuous improvement. Planning, work and dedication always come first.',
+  },
+
+  about5: {
+    pt: 'Apaixonado por esportes, triatleta amador, apreciador de novas tecnologias e inovação, sempre se atualizando e buscando novos conhecimentos.',
+    en: 'Passionate about sports, amateur triathlete, appreciator of new technologies and innovation, always updating and seeking new knowledge.',
+  },
+
   textLabelName: {
     pt: 'Nome:',
     en: 'Name:',
