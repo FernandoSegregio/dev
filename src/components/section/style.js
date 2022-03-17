@@ -65,7 +65,7 @@ export const SectionSkillsStyle = styled.section`
   }
 
   @media (max-width: 800px) {
-    padding: 36px 18px;
+    padding: 10px 33px;
 
     h3 {
       font-size: 30px;
