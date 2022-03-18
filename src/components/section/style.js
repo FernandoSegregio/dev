@@ -16,7 +16,7 @@ export const SectionAboutStyle = styled.section`
   div {
     display: flex;
     flex-direction: column;
-    row-gap: 20px;
+    row-gap: 36px;
   }
 
   a {
