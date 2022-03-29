@@ -28,8 +28,8 @@ const languageData = {
   },
 
   about2: {
-    pt: 'Conhecimento em metodologias ágeis, domínio de Kanban e Scrum.',
-    en: 'Knowledge of agile methodologies, Kanban and Scrum domain.',
+    pt: 'Conhecimento em metodologias ágeis, Kanban e Scrum.',
+    en: 'Knowledge of agile methodologies, Kanban and Scrum.',
   },
 
   about3: {
@@ -102,6 +102,10 @@ const languageData = {
   textFooter: {
     pt: 'Criado por Fernando Segregio com React.JS, Styled Components, Radix UI, muito Amor e Café (que no fim são a mesma coisa)',
     en: 'Created by Fernando Segregio with React.JS, Styled Components, Radix UI, lots of Love and Coffee (that in the end it is the same thing)',
+  },
+  linkRepo: {
+    pt: 'Link Repositório',
+    en: 'Repository link ',
   },
 };
 

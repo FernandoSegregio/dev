@@ -68,7 +68,13 @@ export default function SectionProjects() {
                     {project.skills5 && <img src={project.skills5} alt="" />}
                   </div>
                   <a className="link-rep" href={project.repo}>
-                    <button type="button">{project.linkRep}</button>
+                    <button type="button">
+                      {' '}
+                      {language === 'pt-BR'
+                        ? languageData.linkRepo.pt
+                        : languageData.linkRepo.en}
+
+                    </button>
                   </a>
                   <a className="link-rep" href={project.link}>
                     <button type="button">{project.name}</button>
