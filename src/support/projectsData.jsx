@@ -45,7 +45,7 @@ export const projectsEng = [
     desc: 'Project consists of creating a Pokedex, responsive. To create the project, Pokeapi and Bulbapedia research were used',
     tech: 'React, Context API, Hooks, Axios, HTML, CSS, Styled Components',
     img: POKEDEX,
-    link: 'https://project-farm-app.vercel.app/',
+    link: 'https://pokedex-fernandosegregio.vercel.app',
     linkRep: 'Link Repository',
     repo: 'https://github.com/FernandoSegregio/pokedex',
     skills: 'Skills',
