@@ -3,6 +3,7 @@ import { MdMobileFriendly, MdOutlineDesktopMac } from 'react-icons/md';
 import FARMAPP from '../images/images_projects/FARM-APP.gif';
 import GALACTICOS from '../images/images_projects/GALACTICOS.gif';
 import PACE from '../images/images_projects/PACE.gif';
+import POKEDEX from '../images/images_projects/POKEDEX.jpeg';
 import PIXEL from '../images/images_projects/PIXEL.gif';
 import htmlIcon from '../images/icons_skills/html_icon.svg';
 import cssIcon from '../images/icons_skills/css_icon.svg';
@@ -27,7 +28,7 @@ export const projectsEng = [
     tech: 'React, Context API, Hooks, HTML, CSS, Bootstrap',
     img: FARMAPP,
     link: 'https://project-farm-app.vercel.app/',
-    linkRep: 'Link Repositório',
+    linkRep: 'Link Repository',
     repo: 'https://github.com/FernandoSegregio/Project-FARM-APP',
     skills: 'Skills',
     skills1: reactIcon,
@@ -40,6 +41,24 @@ export const projectsEng = [
   },
   {
     id: 2,
+    name: 'Pokedex',
+    desc: 'Project consists of creating a Pokedex, responsive. To create the project, Pokeapi and Bulbapedia research were used',
+    tech: 'React, Context API, Hooks, Axios, HTML, CSS, Styled Components',
+    img: POKEDEX,
+    link: 'https://project-farm-app.vercel.app/',
+    linkRep: 'Link Repository',
+    repo: 'https://github.com/FernandoSegregio/pokedex',
+    skills: 'Skills',
+    skills1: reactIcon,
+    skills2: javascriptIcon,
+    skills3: styledIcon,
+    skills4: cssIcon,
+    skills5: gitIcon,
+    mobile: <MdMobileFriendly />,
+    desktop: <MdOutlineDesktopMac />,
+  },
+  {
+    id: 3,
     name: 'Pace Fácil',
     desc: 'Combining 2 passions, running and programming, I created this app to help runners calculate their pace, average speed and total time.',
     tech: 'React, JavaScript, Styled Components, Logíca de Programação',
@@ -56,13 +75,13 @@ export const projectsEng = [
     desktop: <MdOutlineDesktopMac />,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Natal Galácticos',
     desc: 'Application created for the dissemination of the Galacticos Christmas Campaign, a charity campaign that takes place in the city of Juiz de Fora, MG',
     tech: 'React, JavaScript, HTML, CSS',
     img: GALACTICOS,
     link: 'https://natalgalacticos2021.vercel.app',
-    linkRep: 'Link Repositório',
+    linkRep: 'Link Repository',
     repo: 'https://github.com/FernandoSegregio/natalgalacticos',
     skills: 'Skills',
     skills1: reactIcon,
@@ -73,13 +92,13 @@ export const projectsEng = [
     desktop: <MdOutlineDesktopMac />,
   },
   {
-    id: 4,
+    id: 5,
     name: 'Super Pixel Art World',
     desc: 'Project carried out at Trybe, in the fundamentals module, using DOM manipulation and JavaScript manipulation.',
     tech: 'React, JavaScript, HTML, CSS',
     img: PIXEL,
     link: 'https://pixel-art-gamma.vercel.app',
-    linkRep: 'Link Repositório',
+    linkRep: 'Link Repository',
     repo: 'https://github.com/FernandoSegregio/pixelArt',
     skills: 'Skills',
     skills1: javascriptIcon,
@@ -112,6 +131,24 @@ export const projects = [
   },
   {
     id: 2,
+    name: 'Pokedex',
+    desc: 'Projeto consiste na criação de um Pokedex, responsiva. Para criar o projeto, foram utilizadas a Pokeapi e pesquisas na Bulbapedia',
+    tech: 'React, Context API, Hooks, Axios, HTML, CSS, Styled Components',
+    img: POKEDEX,
+    link: 'https://pokedex-fernandosegregio.vercel.app',
+    linkRep: 'Link Repositório',
+    repo: 'https://github.com/FernandoSegregio/pokedex',
+    skills: 'Skills',
+    skills1: reactIcon,
+    skills2: javascriptIcon,
+    skills3: styledIcon,
+    skills4: cssIcon,
+    skills5: gitIcon,
+    mobile: <MdMobileFriendly />,
+    desktop: <MdOutlineDesktopMac />,
+  },
+  {
+    id: 3,
     name: 'Pace Fácil',
     desc: `Aplicação feita para facilitar a vida de corredores.
     Juntando 2 paixões, corrida e programação, criei este aplicativo para ajudar corredores a calcular o seu pace, velocidade média e tempo total.`,
@@ -129,7 +166,7 @@ export const projects = [
     desktop: <MdOutlineDesktopMac />,
   },
   {
-    id: 3,
+    id: 4,
     name: 'Natal Galácticos',
     desc: 'Aplicação criada para a divulgação da Campanha de Natal dos Galácticos, uma campanha beneficenteque acontece na cidade de Juiz de Fora, MG',
     tech: 'React, JavaScript, HTML, CSS',
@@ -146,7 +183,7 @@ export const projects = [
     desktop: <MdOutlineDesktopMac />,
   },
   {
-    id: 4,
+    id: 5,
     name: 'Super Pixel Art World',
     desc: 'Projeto Realizado na Trybe, no módulo de fundamentos, usando manipulação do DOM e manipulação.',
     tech: 'React, JavaScript, HTML, CSS',
