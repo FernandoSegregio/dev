@@ -6,37 +6,19 @@ const changeTitleColor2 = keyframes`
     color: black;
     background-clip: text;
     -webkit-background-clip: text;
-
     -webkit-text-fill-color: transparent;
   }
-  70% {
-    
-    color: ${(props) => props.theme.title70};
-
-  }
-
-  80% {
-
-    color: ${(props) => props.theme.title80};
-
-  }
-
+  
   100% {
-    color: ${(props) => props.theme.title100};
+    color: #a0a0a0;
+
   }
 `;
 
 const changeTitleColor1 = keyframes`
-0% {
-  color: ${(props) => props.theme.title100};
-  
-}
-20% {
-  color: ${(props) => props.theme.title80};
-}
 
-30% {
-  color: ${(props) => props.theme.title70};
+0% {
+  color: #a0a0a0; 
 }
 
 100% {
@@ -44,7 +26,6 @@ const changeTitleColor1 = keyframes`
   color: black;
   background-clip: text;
   -webkit-background-clip: text;
-
   -webkit-text-fill-color: transparent;
 }
 `;
@@ -75,7 +56,14 @@ export const MainStyled = styled.main`
     margin-bottom: -50px;
     width: 580px;
     letter-spacing: -5px;
-    animation: ${changeTitleColor1} 8s infinite;
+    animation-name: ${changeTitleColor1};
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: ${changeTitleColor1};
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: -10.5s;
+    -webkit-animation-delay: -10.5s;
   }
 
   .name-title2 {
@@ -83,9 +71,15 @@ export const MainStyled = styled.main`
     font-weight: 800;
     letter-spacing: -5px;
     margin-bottom: 3%;
-    animation: ${changeTitleColor2} 8s infinite;
+    animation-name: ${changeTitleColor2};
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: ${changeTitleColor2};
+    -webkit-animation-duration: 8s;
+    -webkit-animation-iteration-count: infinite;
+    animation-delay: -10.5s;
+    -webkit-animation-delay: -10.5s;
   }
-
 
   
   @media (max-width: 800px) {
