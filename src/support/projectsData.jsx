@@ -36,7 +36,6 @@ export const projectsEng = [
     skills3: bootstrapIcon,
     skills4: cssIcon,
     skills5: gitIcon,
-    mobile: <MdMobileFriendly />,
     desktop: <MdOutlineDesktopMac />,
   },
   {
@@ -126,7 +125,6 @@ export const projects = [
     skills3: bootstrapIcon,
     skills4: cssIcon,
     skills5: gitIcon,
-    mobile: <MdMobileFriendly />,
     desktop: <MdOutlineDesktopMac />,
   },
   {
