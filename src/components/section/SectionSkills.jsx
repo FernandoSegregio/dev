@@ -15,11 +15,11 @@ import jestIcon from '../../images/icons_skills/jest_icon.svg';
 import mySQLIcon from '../../images/icons_skills/mySQL_icon.svg';
 import nodeIcon from '../../images/icons_skills/node_icon.svg';
 import scrumIcon from '../../images/icons_skills/scrum_icon.svg';
-import kanbanIcon from '../../images/icons_skills/kanban_icon.svg';
 import communicationIcon from '../../images/icons_skills/communication_icon.svg';
 import empathyIcon from '../../images/icons_skills/empathy_icon.svg';
 import teamWorkIcon from '../../images/icons_skills/team_work_icon.svg';
 import timeIcon from '../../images/icons_skills/time_icon.svg';
+import typescriptIcon from '../../images/icons_skills/typescript_icon.svg';
 
 export default function SectionSkills() {
   const { theme, language } = useContext(PortfolioContext);
@@ -38,16 +38,20 @@ export default function SectionSkills() {
         </h5>
         <div>
           <p>
+            <img src={typescriptIcon} alt="Typscript" />
+            Typescript
+          </p>
+          <p>
+            <img src={javascriptIcon} alt="Javascript" />
+            Javascript
+          </p>
+          <p>
             <img src={htmlIcon} alt="HTML 5" />
             HTML 5
           </p>
           <p>
             <img src={cssIcon} alt="CSS 3" />
             CSS 3
-          </p>
-          <p>
-            <img src={javascriptIcon} alt="Javascript" />
-            Javascript
           </p>
           <p>
             <img src={reactIcon} alt="React" />
@@ -80,10 +84,6 @@ export default function SectionSkills() {
           <p>
             <img src={scrumIcon} alt="Scrum" />
             Scrum
-          </p>
-          <p>
-            <img src={kanbanIcon} alt="Kanban" />
-            Kanban
           </p>
         </div>
         <h5 className="soft">
