@@ -68,6 +68,10 @@ export const SectionSkillsStyle = styled.section`
     margin: 20px;
   }
 
+  .type {
+    border-radius: 12px;
+  }
+
   h5 {
     font-size: 25px;
     font-family: sen;

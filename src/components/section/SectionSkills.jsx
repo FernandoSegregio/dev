@@ -38,7 +38,7 @@ export default function SectionSkills() {
         </h5>
         <div>
           <p>
-            <img src={typescriptIcon} alt="Typscript" />
+            <img src={typescriptIcon} alt="Typscript" className="type" />
             Typescript
           </p>
           <p>
