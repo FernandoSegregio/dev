@@ -41,7 +41,7 @@ export default function SectionAbout() {
             ? languageData.about2.pt
             : languageData.about2.en}
         </p>
-        <p>
+        {/* <p>
           {language === 'pt-BR'
             ? languageData.about3.pt
             : languageData.about3.en}
@@ -54,7 +54,7 @@ export default function SectionAbout() {
 
             </strong>
           </a>
-        </p>
+        </p> */}
         <p>
           {language === 'pt-BR'
             ? languageData.about4.pt
